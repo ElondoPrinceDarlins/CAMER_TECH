@@ -1,4 +1,32 @@
-#fangmbeng{
-    color: white;
-    background-color: black;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    max-width:  135px; 
+    background-color: white;
+    margin-left: 120px;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+    color: azure;
+    text-align: left;
+    align-items: baseline;
+}
+
+
+footer{
+    padding: 70px 0px;
+    display: flex;
+    align-items: baseline; 
+
+}
+.tech{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+
 }
