@@ -1,10 +1,5 @@
 #joshian{
-background-color: #c5e5c3;
-}
-.container {
-  display: flex;
-  align-items: center; /* Center items vertically */
-  justify-content: space-between; /* Spacing between image and text */
+background-color:white;
 }
 
 .image {
@@ -15,7 +10,6 @@ background-color: #c5e5c3;
 .text {
   flex: 1; /* Text takes up 1/2 of the container */
   font-size: 15px;
-  justify-content: center;
 }
 
 .image img {
@@ -41,15 +35,15 @@ background-color:rgba(0,0,0,0.27);
     display: flex; /* Optional: Use flexbox for layout control */
     align-items: center; /* Align items vertically */
 }
-
 .container img {
     margin-left: 200px; /* Adjust as needed */
 }
 .container p {
-    margin-right: 200px; /* Adjust as needed */
+    margin-right: 100px; /* Adjust as needed */
 }
 .container h1 {
-    margin-right: 200px; /* Adjust as needed */
+    margin-right: 100px; /* Adjust as needed */
 }
+
 
 
