@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/home/elondo_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/derick_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/auth/auth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/elondo_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/home/derick_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/joshian_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/home/joshian_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/nestorngwa_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/home/nestorngwa_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/newton_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/home/newton_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/registration/login/index/login/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/home/derick_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/derick_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/home/elondo_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/elondo_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/home/joshian_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/joshian_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/home/nestorngwa_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/nestorngwa_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/home/newton_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/newton_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,12 +60,13 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "elondo__branch",
+    "git-widget-placeholder": "Merging elondo__branch",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DARLINS PRINCE TECH\Desktop\CAMER_TECH\CAMER_TECH-webEnd\pages" />
       <recent name="C:\Users\DARLINS PRINCE TECH\Desktop\CAMER_TECH\CAMER_TECH-webEnd\js\registration" />
       <recent name="C:\Users\DARLINS PRINCE TECH\Desktop\CAMER_TECH\CAMER_TECH-webEnd\pages\home" />
     </key>
