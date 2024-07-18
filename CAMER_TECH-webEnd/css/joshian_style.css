@@ -1,3 +1,32 @@
-#joshian {
-   background-color: red;
+#joshian{
+background-color: white;
 }
+.container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Spacing between image and text */
+}
+
+.image {
+  flex: 1; /* Image takes up 1/2 of the container */
+  margin-right: 20px; /* Adjust spacing between image and text */
+}
+
+.text {
+  flex: 1; /* Text takes up 1/2 of the container */
+}
+
+.image img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+}
+.card_button button{
+    padding: 3px 10px;
+    background-color: #075a37;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 18px;
+    margin: 10px;
+
+}
+
