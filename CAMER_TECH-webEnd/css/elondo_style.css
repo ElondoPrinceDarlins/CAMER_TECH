@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+}
+
+.main-div {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+}
+
+.bold-header {
+  font-weight: bold;
+}
+
+.unbold-header {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  background-color: #3c763d;
+  padding: 15px;
+  border-radius: 8px;
+  align-items: center;
+  width: 80%;
+  color: white;
+  position: relative;
+}
+
+.brand-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.brand-details {
+  flex: 1;
+  text-align: left;
+  position: relative;
+}
+
+.brand-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.tech-available, .categories {
+  margin: 5px 0;
+}
+
+.see-more {
+  background-color: white;
+  color: green;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.see-more:hover {
+  background-color: lightgreen;
+  color: white;
+}
