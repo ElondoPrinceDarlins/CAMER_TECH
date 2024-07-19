@@ -7,8 +7,7 @@
     <list default="true" id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/derick_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/derick_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/image for hero section without background.png" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/img/image for hero section without background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/js/derick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/img/image for hero section without background.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/derick_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/derick_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,34 +43,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Fangmbeng__branch",
-    "kotlin-language-version-configured": "true"
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#5 on derick__branch&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Fangmbeng__branch&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  &lt;component name=&quot;PropertiesComponent&quot;&gt;{
+  &amp;quot;keyToString&amp;quot;: {
+    &amp;quot;RunOnceActivity.ShowReadmeOnStart&amp;quot;: &amp;quot;true&amp;quot;,
+    &amp;quot;git-widget-placeholder&amp;quot;: &amp;quot;#5 on derick__branch&amp;quot;,
+    &amp;quot;kotlin-language-version-configured&amp;quot;: &amp;quot;true&amp;quot;
   }
+}&lt;/component&gt;
+  &lt;component name=&quot;RunManager&quot;&gt;
+    &lt;configuration default=&quot;true&quot; type=&quot;JetRunConfigurationType&quot;&gt;
+      &lt;module name=&quot;CAMER_TECH&quot; /&gt;
+      &lt;method v=&quot;2&quot;&gt;
+        &lt;option name=&quot;Make&quot; enabled=&quot;true&quot; /&gt;
+      &lt;/method&gt;
+    &lt;/configuration&gt;
+    &lt;configuration default=&quot;true&quot; type=&quot;KotlinStandaloneScriptRunConfigurationType&quot;&gt;
+      &lt;module name=&quot;CAMER_TECH&quot; /&gt;
+      &lt;option name=&quot;filePath&quot; /&gt;
+      &lt;method v=&quot;2&quot;&gt;
+        &lt;option name=&quot;Make&quot; enabled=&quot;true&quot; /&gt;
+      &lt;/method&gt;
+    &lt;/configuration&gt;
+  &lt;/component&gt;
 }</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="CAMER_TECH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="CAMER_TECH" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
-}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
