@@ -1,1 +1,279 @@
+#derick {
+ background-color: #E9ECE3;
+ min-height: 100vh;
+  }
+ body {
+ background-color: #E9ECE3;
+  font-family: inter;
+   align-items: center;
+   justify-content: center;
+ }
+ #derick_nav{
+ background-color: #E9ECE3;
+  font-family: inter;
+ }
+   .navbar {
+     display: flex;
+
+     justify-content: space-between;
+     align-items: center;
+       background-color: #E9ECE3;
+     padding: 10px 20px;
+       margin-top: 20px; /* Added margin at the top */
+
+   }
+
+   .navbar .logo {
+     color: #000000;
+     font-size: 24px;
+     font-weight: bold;
+   }
+
+
+   .buttons {
+     display: flex;
+     align-items: center;
+   }
+
+   #derick_buttons button {
+     margin: 0 5px;
+     padding: 10px 20px;
+     border: none;
+     cursor: pointer;
+     border-radius: 25px;
+     font-size: 16px;
+     transition: background-color 0.3s, color 0.3s;
+   }
+
+   #derick_buttons .btn-primary {
+     background-color: #CFD8BF;
+     cursor: pointer;
+     width: 150px;
+     height: 50px;
+     color:black;
+   }
+
+
+   #derick_buttons .btn-secondary {
+     background-color: #7d1c15;
+     cursor: pointer;
+     width: 150px;
+     height: 50px;
+     color: #fff;
+   }
+   #toggle {
+     display: none;
+ }
+
+ .toggle-button {
+     display: none;
+     flex-direction: column;
+     width: 30px;
+     height: 20px;
+     justify-content: space-between;
+     cursor: pointer;
+ }
+
+ .toggle-button span {
+     display: block;
+     width: 100%;
+     height: 3px;
+     background-color: #000000;
+     transition: all 0.3s;
+ }
+
+ .menu {
+   background-color: #E9ECE3;
+     list-style: none;
+     display: flex;
+     gap: 20px;
+ }
+
+ .menu li {
+     border-bottom: none;
+ }
+
+ .menu li a {
+   font-family: inter;
+     color: #000000;
+     text-decoration: none;
+     padding: 10px 15px;
+ }
+
+ .menu li a:hover {
+   color: white;
+       background-color: #14400b;
+     border-radius: 4px;
+ }
+
+
+ @media (max-width: 768px) {
+     .toggle-button {
+         display: flex;
+     }
+
+     .menu {
+         display: none;
+         flex-direction: column;
+         width: 100%;
+           background-color: #E9ECE3;
+         position: absolute;
+         top: 60px;
+         left: 0;
+         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+     }
+
+     .menu li {
+         border-bottom: 1px solid #444;
+     }
+
+     .menu li a {
+         padding: 15px;
+         text-align: center;
+     }
+
+     #toggle:checked ~ .menu {
+         display: flex;
+     }
+
+     #toggle:checked + .toggle-button span:nth-child(1) {
+         transform: rotate(45deg) translate(5px, 5px);
+     }
+
+     #toggle:checked + .toggle-button span:nth-child(2) {
+         opacity: 0;
+     }
+
+     #toggle:checked + .toggle-button span:nth-child(3) {
+         transform: rotate(-45deg) translate(5px, -5px);
+     }
+ }
+
+   @media (max-width: 768px) {
+     .nav-links {
+         display: none;
+         flex-direction: column;
+         width: 100%;
+
+         background-color: #846464;
+     }
+     .nav-links.active {
+
+       display: flex;
+
+         height: 400px;
+     }
+     .buttons {
+         display: none;
+     }
+
+   }
+   #header_body {
+   display :flex;
+   justify-content: space-between;
+       margin-top: 20px; /* Add some margin to separate from the navbar */
+
+   }
+   @media (max-width: 768px) {
+       #header_body  {
+           display:block;
+            align-items:center;
+            justify-content: space-around;
+           min-width: 30%;
+            margin: 10px ;
+              }
+        }
+   .derickText{
+   display: flex;
+       flex-direction: column;
+       justify-content: center;
+        padding: 27px;
+        margin: 0 5px;
+        text-align: center;
+         border-radius: 10px;
+   }
+   #derick h2 {
+     color:black;
+     font-size: 50px;
+     font-family: inter;
+   }
+   #derick p {
+
+   color:black;
+   align-items:center;
+     font-weight: 500;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size:20px;
+   }
+    .input-box {
+         position: relative;
+         height: 60px;
+         max-width: 900px;
+         min-width: 70px;
+         width: 100%;
+         margin: auto;
+         border-radius: 50px;
+         border: 2px solid black;
+
+       }
+       .input-box i,
+       .input-box .button {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+       }
+       .input-box i {
+         left: 20px;
+         font-size: 30px;
+         color: #694f4f;
+       }
+       .input-box input {
+         height: 80%;
+         width: 40%;
+         outline: none;
+         font-size: 18px;
+         font-weight: 400;
+         border: none;
+         padding: 0 155px 0 65px;
+         background-color: #E9ECE3;
+       }
+       .input-box .button {
+         right: 10px;
+         font-size: 16px;
+         font-weight: 400;
+         color: #CFD8BF;
+         border: none;
+         padding: 12px 30px;
+         border-radius: 50px;
+         background-color: #5b1706;
+         cursor: pointer;
+       }
+       .input-box .button:active {
+         transform: translateY(-50%) scale(0.98);
+       }
+
+ .derickImage {
+ max-height: 300px;
+  max-width: 100%;
+  height: auto;
+ padding-top: 83px;
+     align-items: end;
+     justify-content: space-around;
+
+
+
+ }
+ @media (max-width: 768px) {
+        .derickImage  {
+       min-width:30%;
+            flex-direction: column;
+
+             align-items:center;
+             justify-content: space-around;
+            width: 30%;
+            height: auto;
+            margin: 10px;
+             ;left: 2px;
+               }
+         }
 
