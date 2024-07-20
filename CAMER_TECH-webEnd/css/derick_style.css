@@ -256,6 +256,11 @@
  max-height: 300px;
   max-width: 100%;
   height: auto;
+ padding-top: 83px;
+     align-items: end;
+     justify-content: space-around;
+
+
 
  }
  @media (max-width: 768px) {
