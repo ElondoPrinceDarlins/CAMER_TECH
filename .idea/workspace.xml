@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/authentication/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/authentication/login/login.html" afterDir="false" />
+=======
     <list default="true" id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="init">
+>>>>>>> 730348b1c128f8811bbc1a7e150209e4594f89ff
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/js/auth/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/auth/auth.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +58,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
@@ -57,6 +66,28 @@
     "git-widget-placeholder": "elondo__branch",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/DARLINS PRINCE TECH/Desktop/portfolio_2024/CAMER_TECH"
+=======
+<<<<<<< HEAD
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "elondo__branch",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DARLINS PRINCE TECH\Desktop\CAMER_TECH\CAMER_TECH-webEnd\css\authentication" />
+      <recent name="C:\Users\DARLINS PRINCE TECH\Desktop\CAMER_TECH\CAMER_TECH-webEnd\pages\authentication\login" />
+      <recent name="C:\Users\DARLINS PRINCE TECH\Desktop\CAMER_TECH\CAMER_TECH-webEnd\js\auth\login" />
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;elondo__branch&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+>>>>>>> d6a216a11cf387f4c9e502442b49dc752c6b0726
   }
 }]]></component>
   <component name="RecentsManager">
@@ -64,6 +95,7 @@
       <recent name="C:\Users\DARLINS PRINCE TECH\Desktop\CAMER_TECH\CAMER_TECH-webEnd\pages" />
       <recent name="C:\Users\DARLINS PRINCE TECH\Desktop\CAMER_TECH\CAMER_TECH-webEnd\js\registration" />
       <recent name="C:\Users\DARLINS PRINCE TECH\Desktop\CAMER_TECH\CAMER_TECH-webEnd\pages\home" />
+>>>>>>> 730348b1c128f8811bbc1a7e150209e4594f89ff
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
