@@ -1,72 +1,82 @@
-body {
-    font-family: Arial, sans-serif;
+
+#elondo{
+  font-family: Arial, sans-serif;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
 }
 
 .main-div {
-    text-align: center;
-    margin: 20px;
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 8px;
+  color: black;
+  text-align: center;
 }
 
-.main-div h1 {
-    font-weight: bold;
+.bold-header {
+  font-weight: bold;
 }
 
-.content-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.unbold-header {
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 
-.info-container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 20px 0;
-    align-items: center;
-    background-color: #c7cbc0;
-    padding: 20px;
-    border-radius: 8px;
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-.info-text {
-    width: 45%;
-    text-align: left;
+.brand {
+  display: flex;
+  background-color: #3c763d;
+  padding: 15px;
+  border-radius: 8px;
+  align-items: center;
+  width: 80%;
+  color: white;
+  position: relative;
 }
 
-.image-icon {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+.brand-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
 }
 
-.image-icon img {
-    max-width: 500%;
-    height: 100px;
+.brand-details {
+  flex: 1;
+  text-align: left;
+  position: relative;
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    color: black;
-    cursor: pointer;
-    font-weight: bold;
+.brand-name {
+  font-weight: bold;
+  margin: 0;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 30px 100px;
-
+.tech-available, .categories {
+  margin: 5px 0;
 }
 
-.left, .right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #c7cbc0;
-    padding: 20px;
-    border-radius: 8px;
-    width: 48%;
-    margin: 10px;
+.see-more {
+  background-color: white;
+  color: green;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.see-more:hover {
+  background-color: lightgreen;
+  color: white;
 }
