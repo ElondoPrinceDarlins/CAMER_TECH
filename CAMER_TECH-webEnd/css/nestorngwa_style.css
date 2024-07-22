@@ -1,44 +1,46 @@
-/* Optional: Add responsive design */
-@media (max-width: 600px) {
-    .nescontainer {
-        flex-direction: column; /* Stacks sections vertically on small screens */
+#nestorngwa1{
+    display: block;
+    align-items: center;
+    background-color: #fff;
+    height: 50vh;
+    margin-left: 20%;
+}
+.neslogotext{
+    margin-top: 30px;
+}
+.neslogoicons{
+    height: 30vh;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    margin-left: -190px;
+}
+#nestorngwa2{
+    display: flexbox;
+    flex-flow: row;
+    gap: 10px; /* Space between boxes */
+    max-width: 640px; /* Adjust width to fit the layout */
+}
+}
+.nesservices{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 640px;
+}
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+    S{
+        height: 40px;
+        font-size: 16px;
     }
 }
-#nestorngwa{
-    display: flex; /* Enables flexbox */
-    justify-content: space-between; /* Distributes space between items */
-    background-color: #c5e5c3;
+.nesservicestext{
+    align-self: center;
 }
-#nessec1{
-    align-self: flex-start;
-    flex: 1; /* Each section takes up equal space */
-    padding: 20px;
-    margin: 10px;
-    background-color: #c5e5c3;
-    border: 1px solid #c5e5c3;
-    flex-wrap: wrap; /* Allows wrapping of boxes */
-    gap: 10px; /* Space between boxes */
-    border-radius: 15px;
-}
-#nessec2{
-    align-self: flex-end;
-    flex: 1; /* Each section takes up equal space */
-    padding: 10px;
-    margin: 10px;
-    background-color: #c5e5c3;
-    border: 1px solid #c5e5c3;
-    flex-wrap: wrap; /* Allows wrapping of boxes */
-    gap: 10px; /* Space between boxes */
-    border-radius: 15px;
-    padding-top: 10px;
-}
-
-.nescontainer {
-    display: flex;
-
-}
-
-.nesdiv1{
+.S{
     flex: 1 1 calc(33.333% - 20px); /* Three boxes per row with spacing */
     padding: 20px;
     background-color: #f0f0f0;
@@ -47,62 +49,4 @@
     box-sizing: border-box; /* Includes padding and border in the width */
     border-radius: 15px;
    text-align: center;
-}
-.nesdiv2{
-    flex: 1 1 calc(33.333% - 20px); /* Three boxes per row with spacing */
-    padding: 7px;
-    background-color: green;
-    border: 2px solid #0c0b0b;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Includes padding and border in the width */
-    border-radius: 15px;
-    margin-bottom: 5%;
-
-}
-.nespsec2{
-    flex: 1 1 calc(33.333% - 20px); /* Three boxes per row with spacing */
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 2px solid #c5e5c3;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Includes padding and border in the width */
-    border-radius: 15px;
-}
-.nesdiv2nesdiv1{
-    flex: 1 1 calc(33.333% - 20px); /* Three boxes per row with spacing */
-    padding: 20px;
-    background-color: #c5e5c3;
-    border: 5px solid #c5e5c3;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
-    box-sizing: border-box; /* Includes padding and border in the width */
-    border-radius: 15px;
-}
-.nesview{
-    text-align: end;
-    color: white;
-}
-/* Responsive design for smaller screens */
-@media (max-width: 800px) {
-    .nesdiv2 {
-        flex: 1 1 calc(50% - 20px); /* Two boxes per row */
-    }
-}
-
-@media (max-width: 500px) {
-    .nesdiv2 {
-        flex: 1 1 100%; /* One box per row */
-    }
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 800px) {
-    .nesdiv2 {
-        flex: 1 1 calc(50% - 20px); /* Two boxes per row */
-    }
-}
-
-@media (max-width: 500px) {
-    .nesdiv2 {
-        flex: 1 1 100%; /* One box per row */
-    }
 }
