@@ -4,108 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="init" />
-    <list default="true" id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="">
+    <list default="true" id="a47f3859-06db-4db4-b279-8b8b22d69773" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/elondo_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/elondo_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/elondo_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/elondo_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/joshian_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/joshian_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/joshian_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/joshian_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/newton_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/newton_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="dev_branch" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;kingderick55&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ElondoPrinceDarlins/CAMER_TECH.git&quot;,
-    &quot;accountId&quot;: &quot;6ef9f332-09a7-44b8-8a67-fe630a71e926&quot;
-  }
-}</component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="2jCJ77VaCbbYuYMf3sFWpjL2Bqj" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "elondo__branch",
-    "kotlin-language-version-configured": "true"
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;nestorngwa__branch&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    "git-widget-placeholder": "joshian__branch"
   }
-}</component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+}]]></component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="" />
-      <created>1720884956287</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1720884956287</updated>
-    </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="derick_branch" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
