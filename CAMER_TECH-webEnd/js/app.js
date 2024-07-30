@@ -6,6 +6,7 @@ async function includeHTML(elementId, file){
 includeHTML('derick','/pages/derick_page.html');
 includeHTML('nestorngwa','/pages/nestorngwa_page.html');
 includeHTML('elondo','/pages/elondo_page.html');
-includeHTML('joshian','/pages/joshian_page.html');
 includeHTML('newton','/pages/newton_page.html');
+includeHTML('joshian','/pages/joshian_page.html');
+includeHTML('browndon','/pages/browndon_page.html');
 includeHTML('Fangmbeng','/pages/fangmbeng_page.html');
