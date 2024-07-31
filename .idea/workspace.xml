@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="807b30e5-0a97-4806-b7b8-0f0370245c4e" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/img/admin.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/img/brand adm.png" afterDir="false" />
@@ -19,12 +20,20 @@
       <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/elondo_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/elondo_style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/elondo_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/elondo_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/nestorngwa_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/nestorngwa_page.html" afterDir="false" />
+=======
+    <list default="true" id="807b30e5-0a97-4806-b7b8-0f0370245c4e" name="Changes" comment="init">
+    <list default="true" id="a47f3859-06db-4db4-b279-8b8b22d69773" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> ab7ea73ee723271561f17dd040d9bbf5025fdf27
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "joshian__branch"
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -36,6 +45,7 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="dev_branch" />
+<<<<<<< HEAD
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,6 +81,8 @@
       <map>
         <entry key="$PROJECT_DIR$" value="newton_branch" />
         <entry key="$PROJECT_DIR$" value="derick_branch" />
+=======
+>>>>>>> ab7ea73ee723271561f17dd040d9bbf5025fdf27
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,6 +113,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "git-widget-placeholder": "elondo__branch"
@@ -109,19 +122,25 @@
     "git-widget-placeholder": "Merging nestorngwa__branch",
     "git-widget-placeholder": "dev__branch",
     "kotlin-language-version-configured": "true"
+=======
+>>>>>>> ab7ea73ee723271561f17dd040d9bbf5025fdf27
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+<<<<<<< HEAD
     &quot;git-widget-placeholder&quot;: &quot;nestorngwa__branch&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "elondo__branch",
     "kotlin-language-version-configured": "true"
+=======
+    &quot;git-widget-placeholder&quot;: &quot;joshian__branch&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+>>>>>>> ab7ea73ee723271561f17dd040d9bbf5025fdf27
   }
 }]]></component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="" />
