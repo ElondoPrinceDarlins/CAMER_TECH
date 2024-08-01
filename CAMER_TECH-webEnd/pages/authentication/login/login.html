@@ -6,13 +6,30 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../../../css/authentication/login.css">
+  </head>
+  <body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form action="#" method="post">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
 
-  <link>
-  <title>Document</title>
-</head>
-<body>
-<h1 class="loin">welcome login</h1>
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
 
-<script src="../../../js/authentication/login/login.js"></script>
-</body>
-</html>
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" min="0" required>
+
+      <label for="sex">Sex</label>
+      <select id="sex" name="sex" required>
+        <option value="" disabled selected>Select your sex</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  </body>
+  </html>
