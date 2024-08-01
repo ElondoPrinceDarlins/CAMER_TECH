@@ -1,13 +1,31 @@
-#nestor{
-       background-color: #C7CBC0;
-       font-family: Arial, sans-serif;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       height: 100vh;
-       margin: 0;
-   }
+#nestorngwa1{
+    display: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 50vh;
+    margin-left: 10%;
+    display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           gap: 10px;
+           justify-content: center;
+}
+.neslogotext{
+    margin-top: 30px;
+}
+.neslogoicons{
+    height: 30vh;
+    margin-top: 30px;
+    width: 50%;
+    display: flex;
+    margin-left: 100px;
+    background-color: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
    .container {
        display: flex;
@@ -18,15 +36,7 @@
        padding: 20px;
    }
 
-   .sub-div {
-       background-color: #C7CBC0;
-       padding: 20px;
-       border-radius: 10px;
-       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-       width: 100%;
-       text-align: center;
-       margin-bottom: 20px;
-   }
+
 
    .sub-div h1 {
        font-weight: bold;
@@ -34,28 +44,6 @@
 
    .highlight {
        color: red;
-   }
-
-   .image-container {
-       display: flex;
-       justify-content: center;
-       flex-wrap: wrap;
-       margin: 20px 0;
-   }
-
-   .image-box {
-       width: 23%;
-       height: 100px;
-       border: 1px solid #ddd;
-       border-radius: 5px;
-       overflow: hidden;
-       margin: 10px;
-   }
-
-   .image-box img {
-       width: 100%;
-       height: 100%;
-       object-fit: cover;
    }
 
    .see-more {
