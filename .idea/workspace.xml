@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="">
+    <list default="true" id="807b30e5-0a97-4806-b7b8-0f0370245c4e" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/img/update apple.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/nestorngwa_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/nestorngwa_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/newton_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/newton_style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="derick_branch" />
+        <entry key="$PROJECT_DIR$" value="newton_branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,28 +61,19 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Fangmbeng__branch&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging Fangmbeng__branch&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="" />
-      <created>1720884956287</created>
+      <changelist id="807b30e5-0a97-4806-b7b8-0f0370245c4e" name="Changes" comment="" />
+      <created>1721746226974</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1720884956287</updated>
+      <updated>1721746226974</updated>
     </task>
-    <task id="LOCAL-00001" summary="init">
-      <option name="closed" value="true" />
-      <created>1721330518766</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1721330518767</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,7 +87,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="derick_branch" />
+                        <option value="origin/nestorngwa_branch" />
                       </list>
                     </value>
                   </entry>
@@ -108,7 +100,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge remote-tracking branch 'origin/dev_branch' into Fangmbeng_branch&#10;&#10;# Conflicts:&#10;#&#9;CAMER_TECH-webEnd/index.html&#10;#&#9;CAMER_TECH-webEnd/js/app.js&#10;#&#9;CAMER_TECH-webEnd/package-lock.json&#10;#&#9;CAMER_TECH-webEnd/pages/nestorngwa_page.html" />
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
