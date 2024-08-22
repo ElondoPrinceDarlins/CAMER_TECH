@@ -1,15 +1,15 @@
 #derick {
- background-color: #E9ECE3;
- min-height: 100vh;
+ background-color: ;
+ height: 150vh;
   }
  body {
- background-color: #E9ECE3;
+ background-color:  rgb(5, 5, 92);
   font-family: inter;
    align-items: center;
    justify-content: center;
  }
  #derick_nav{
- background-color: #E9ECE3;
+ background-color: rgb(5, 5, 92);
   font-family: inter;
  }
    .navbar {
@@ -17,14 +17,14 @@
 
      justify-content: space-between;
      align-items: center;
-       background-color: #E9ECE3;
+       background-color:  rgb(5, 5, 92);
      padding: 10px 20px;
        margin-top: 20px; /* Added margin at the top */
 
    }
 
    .navbar .logo {
-     color: #000000;
+     color: white;
      font-size: 24px;
      font-weight: bold;
    }
@@ -46,16 +46,16 @@
    }
 
    #derick_buttons .btn-primary {
-     background-color: #CFD8BF;
+     background-color: rgb(224, 207, 10);
      cursor: pointer;
      width: 150px;
      height: 50px;
-     color:black;
+     color:white;
    }
 
 
    #derick_buttons .btn-secondary {
-     background-color: #7d1c15;
+     background-color: rgb(224, 207, 10);
      cursor: pointer;
      width: 150px;
      height: 50px;
@@ -78,12 +78,12 @@
      display: block;
      width: 100%;
      height: 3px;
-     background-color: #000000;
+     background-color: white;
      transition: all 0.3s;
  }
 
  .menu {
-   background-color: #E9ECE3;
+   background-color:  rgb(5, 5, 92);
      list-style: none;
      display: flex;
      gap: 20px;
@@ -95,15 +95,16 @@
 
  .menu li a {
    font-family: inter;
-     color: #000000;
+     color:white;
      text-decoration: none;
      padding: 10px 15px;
  }
 
  .menu li a:hover {
-   color: white;
-       background-color: #14400b;
+   color:red;
+       background-color:  rgb(5, 5, 92);
      border-radius: 4px;
+     
  }
 
 
@@ -116,7 +117,7 @@
          display: none;
          flex-direction: column;
          width: 100%;
-           background-color: #E9ECE3;
+           background-color:  rgb(5, 5, 92);
          position: absolute;
          top: 60px;
          left: 0;
@@ -155,7 +156,7 @@
          flex-direction: column;
          width: 100%;
 
-         background-color: #846464;
+         background-color: rgb(5, 5, 92);
      }
      .nav-links.active {
 
@@ -193,13 +194,13 @@
          border-radius: 10px;
    }
    #derick h2 {
-     color:black;
+     color:white;
      font-size: 50px;
      font-family: inter;
    }
    #derick p {
 
-   color:black;
+   color:white;
    align-items:center;
      font-weight: 500;
      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
