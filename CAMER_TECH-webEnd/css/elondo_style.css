@@ -1,134 +1,122 @@
-/* General Styles */
 #elondo {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2 {
-    text-align: center;
-    font-weight: bold;
-}
-
-/* IT Specialist Section */
-.it-specialist {
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.image-container img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-}
-
-.text-container {
-    max-width: 500px;
-    padding: 20px;
-}
-
-.text-container h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #fff;
-    border: 2px solid #000;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-    border-radius: 25px;
-    transition: background-color 0.3s;
-}
-
-.cta-button span {
-    font-size: 1.5em;
-}
-
-.cta-button:hover {
-    background-color: #000;
-    color: #fff;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
 }
 
 /* Get Started Section */
 .get-started {
-    background-color: #2e2054;
-    color: #fff;
-    padding: 40px 20px;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white;
 }
 
 .get-started h2 {
-    color: #000;
-    margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
-.steps {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+.steps-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .step {
-    text-align: center;
+  text-align: center;
 }
 
-.circle {
-    background-color: #2e2054;
-    color: #fff;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    font-size: 1.5em;
+.step-button {
+  width: 80px;
+  height: 80px;
+  background-color: #1A1A3F;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .step p {
-    margin: 0;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Blue Background Section */
+.blue-background {
+  background-color: #1A1A3F;
+  height: 150px;
+}
+
+/* IT Specialist Section */
+.it-specialist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.it-specialist .content {
+  flex: 1;
+  padding: 20px;
+  text-align: right;
+}
+
+.it-specialist h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1A1A3F;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #e5e5e5;
+  color: #1A1A3F;
+}
+
+.illustration {
+  flex: 1;
+  text-align: left;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
+  .steps-container {
+    flex-direction: column;
+  }
 
-    .steps {
-        flex-direction: column;
-    }
+  .it-specialist {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .cta-button {
-        text-align: center;
-        padding: 10px 15px;
-    }
+  .it-specialist .content {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 
-    .circle {
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.2em;
-    }
-
-    .text-container h1 {
-        font-size: 1.8em;
-    }
+  .illustration {
+    text-align: center;
+  }
 }
