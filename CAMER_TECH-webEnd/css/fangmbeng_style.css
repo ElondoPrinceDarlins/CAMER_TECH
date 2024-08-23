@@ -1,39 +1,167 @@
-*{
-    margin: 0px;
-    padding: 0px;
+#body_fangmbeng {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background: #333;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
-.container{
-    box-sizing: border-box;
-    margin-left:135px ;
-    font-size: 12px;
-    font-weight: bold;
-    align-items: baseline;
-    font-family: Arial, Helvetica, sans-serif;
 
+/* Container Styles */
+#fangmbeng {
+    padding: 0;
+    background: #f4f4f4;
 }
-ul {
-    list-style: none;
-    text-decoration:none ;
-    color: grey;
-    font-family: Arial, Helvetica, sans-serif;
+
+.container_fangmbeng {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    font-size: 16px;
 }
-ul li{
-    margin-top: 10px;
+
+/* Footer Styles */
+.footer_fangmbeng {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 15px; /* Added horizontal padding for smaller screens */
+    background: whitesmoke;
+    color: black;
+    margin: auto;
+    border-top: 1px solid #ddd; /* Added a top border for a clean separation */
 }
-.copy{
-    margin-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bold ;
+
+.footer-form {
+    flex: 1 1 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
 }
-.tech{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:bold ;
-    margin-top: 10px;
-    font-size: 13px;
+
+.footer-form p.head {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333; /* Changed text color to a darker shade for better visibility */
 }
-@media (max-width: 600px ){
-    .container, .tech, .copy, ul{
-        width: 100%;
-        margin: 20px;
+
+#footer-email {
+    width: 100%;
+    max-width: 300px; /* Increased max-width for better visibility on larger screens */
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #efd3d3;
+    color: #524e4e;
+    outline: none;
+    padding: 0 10px;
+    margin-bottom: 0.5rem;
+}
+
+#footer-email-btn {
+    height: 40px;
+    width: 100%;
+    max-width: 200px; /* Increased max-width for better visibility */
+    cursor: pointer;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+#footer-email-btn:hover {
+    background-color: #004d00; /* Darker green on hover */
+    opacity: 0.8;
+}
+
+/* Footer Sections */
+.footer_1,
+.footer_2 {
+    flex: 1 1 200px;
+    margin: 0 15px; /* Reduced margin to optimize space on smaller screens */
+}
+
+.footer_1 h4,
+.footer_2 h4 {
+    color: rgb(180, 178, 178);
+    margin-bottom: 1rem;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.footer_1 .list,
+.footer_2 div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_1 button,
+.footer_2 button {
+    background: whitesmoke;
+    border: none;
+    margin-left: 120px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: left;
+}
+
+.footer_1 button a,
+.footer_2 button a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.footer_1 button:hover,
+.footer_2 button:hover {
+    background-color: #e9ece3;
+}
+
+.footer_1 button a:hover,
+.footer_2 button a:hover {
+    color: rgb(180, 178, 178);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_1,
+    .footer_2 {
+        margin: 0;
+        text-align: center;
+    }
+
+    #footer-email,
+    #footer-email-btn {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer-email,
+    #footer-email-btn {
+        font-size: 14px;
+    }
+
+    .footer_1 button,
+    .footer_2 button {
+        font-size: 14px;
+        padding: 8px 12px;
     }
 }
