@@ -1,10 +1,7 @@
-<<<<<<< HEAD
+
 #nestor{
-<<<<<<< HEAD
        background-color: #e9ece3;
-=======
-       background-color: #E9ECE3;
->>>>>>> ab7ea73ee723271561f17dd040d9bbf5025fdf27
+
        font-family: Arial, sans-serif;
        display: flex;
        justify-content: center;
@@ -13,7 +10,7 @@
        height: 100vh;
        margin: 0;
    }
-=======
+
 #nestorngwa1{
     display: center;
     align-items: center;
@@ -42,7 +39,7 @@
     text-align: center;
     margin-bottom: 20px;
 }
->>>>>>> 8a7bec2728dc7a92bb08c3873a6787c1922a9d5f
+
 
    .container {
        display: flex;
