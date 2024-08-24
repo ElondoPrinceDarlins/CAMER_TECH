@@ -107,7 +107,7 @@ nav {
 
 .derickHeader-image {
   flex: 1;
-  background-image: url('/CAMER_TECH-webEnd/img/hht-removebg-preview\ \(1\).png');
+  background-image: url('../img/hht-removebg-preview\ \(1\).png');
   background-size: cover;
   background-position: center;
 
@@ -219,7 +219,7 @@ nav {
 }
 .category a {
   text-decoration: none;
-  
+
 }
 .category i {
   font-size: 64px;
@@ -256,5 +256,14 @@ nav {
 @media (max-width: 480px) {
   .category-container {
       grid-template-columns: 1fr;
+
   }
 }
+  .category img {
+    
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
