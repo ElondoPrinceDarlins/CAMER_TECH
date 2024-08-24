@@ -1,42 +1,76 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            logo
-        </title>
-        <link rel="stylesheet" href="../../css/authentication/signup.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    </head>
-    <bod>
-        <diV class="logo">
-        Camer Tech
-        </diV>
-<div class="wrapper">
-    <form action="">
-        <h1>Login</h1>
-        <div class="input-box">
-            <input type="number" placeholder=" Phone Number:" required>
-            <i class='bx bxs-user'></i>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up Page</title>
+  <link rel="stylesheet" href="../../../CAMER_TECH-webEnd/./css/./authentication/signup.css">
+</head>
+<body>
+
+<div class="signup-wrapper">
+  <div class="signup-container">
+
+    <!-- Left Side (Image Section with Heading) -->
+    <div class="image-section">
+      <h2 class="image-heading">CAMER_TECH</h2>
+      <img src="../././../../CAMER_TECH-webEnd/./img/login-logo.jpg" alt="Illustration" alt="Illustration" />
+    </div>
+
+    <!-- Right Side (Form Section) -->
+    <div class="signup-section">
+      <h1>Lets get started!</h1>
+      <p>Complete sign up to access your dashboard</p>
+
+      <form>
+        <div class="form-group">
+          <label for="name">name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
         </div>
-        <div class="input-box">
-            <input type="text" placeholder=" Email:" required>
-            <i class='bx bxs-envelope' ></i>
+
+        <!-- Gender Section in Horizontal Line -->
+        <div class="form-group gender-group">
+          <label>gender</label>
+          <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label>
+
+            <input type="radio" id="others" name="gender" value="others">
+            <label for="others">others</label>
+          </div>
         </div>
-        <div class="input-box">
-            <input type="password" placeholder=" password:" required>
-            <i class='bx bxs-lock-alt' ></i>
+
+        <div class="form-group">
+          <label for="email">e-mail</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
         </div>
-        <div class="remember-password">
-            <label><input type="checkbox"> Remember me</label>
-            <a href="#">Forgot password</a>
+
+        <div class="form-group">
+          <label for="phone">phone number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required>
         </div>
-        <button type="submit" class="btn">Login</button>
-        <div class="register-link">
-            <p>Don't have an account?
-            <a href="#">Register</a></p>
+
+        <div class="form-group">
+          <label for="password">password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
         </div>
-    </form>
+
+        <div class="form-group">
+          <label for="repeat-password">repeat password</label>
+          <input type="password" id="repeat-password" placeholder="Repeat your password" required>
+        </div>
+
+        <button type="submit" class="signup-btn">Sign-up</button>
+      </form>
+
+      <p class="login-text">Already have an account? <a href="#">Login</a></p>
+    </div>
+  </div>
 </div>
-    </bod>
+
+</body>
 </html>
