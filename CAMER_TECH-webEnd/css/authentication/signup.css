@@ -1,104 +1,179 @@
-
-
-.{
-    margin: 0;
-    padding: 0;
-    font-family: : "poppins",sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: whitesmoke;
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.logo {
-    font-size: 30px;
 
-    margin-right: 100px;
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
-.wrapper {
-    border-radius: 10px;
-    width: 420px;
-    background: transparent;
-    padding: 30px 40px;
-}
-.wrapper h1 {
-    font-size: 36px;
-    text-align: center;
-}
-.wrapper .input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    background: rgb(201, 192, 180);
-    margin: 30px 0;
-    border-radius: 40px;
-}
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: ;
-    border-radius: 40px;
-    font-size: 16px;
-    color: black;
-    
 
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
-.input-box input ::placeholder {
-    color: aliceblue;
+
+/* Image Section Styling */
+.image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translate(-50%);
-    font-size: 20px;
+
+.image-heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-.remember-password {
-    display: flex;
-    justify-content: space-between;
-    font-size: 30px;
-    margin: -15px 0 15px;
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
 }
-.remember-password label input {
-    accent-color: green;
-    margin-right: 3px;
+
+/* Sign-Up Section Styling */
+.signup-section {
+  padding: 40px;
+  text-align: left;
 }
-.remember-password a {
-    color: red;
-    text-decoration: none;
+
+.signup-section h1 {
+  margin-bottom: 20px;
 }
-remember-password a:hover{
-    text-decoration: underline;
+
+.signup-section p {
+  margin-bottom: 30px;
+  color: #555;
 }
-.wrapper .btn {
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Gender Group Styling - Horizontal Alignment */
+.gender-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-options {
+  display: flex;
+  gap: 20px; /* Adds space between gender options */
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-text {
+  margin-top: 20px;
+}
+
+.login-text a {
+  color: red;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .signup-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-section {
+    margin-bottom: 20px;
+  }
+
+  .signup-section {
     width: 100%;
-    height: 45px;
-    background: green;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px black;
-    cursor: pointer;
-    font-size: 16px;
-    color: white;
-    font-weight: 600;
+    padding: 20px;
+  }
 }
-.wrapper .register-link {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
+
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 15px;
+  }
+
+  .image-section img {
+    width: 70%;
+  }
+
+  .form-group input {
+    padding: 8px;
+  }
+
+  .signup-btn {
+    padding: 8px;
+  }
+
+  .login-text {
+    font-size: 14px;
+  }
 }
-.register-link p a {
-    color: red;
-    text-decoration: none;
-    font-weight: 600;
-}
-.register-link p a : hover {
-    text-decoration: underline;
+
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 10px;
+  }
+
+  .image-section img {
+    width: 90%;
+  }
+
+  .form-group input {
+    padding: 6px;
+  }
+
+  .signup-btn {
+    padding: 6px;
+  }
+
+  .login-text {
+    font-size: 12px;
+  }
 }

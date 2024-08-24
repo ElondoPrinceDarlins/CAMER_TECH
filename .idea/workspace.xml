@@ -29,7 +29,11 @@
 =======
     <list default="true" id="807b30e5-0a97-4806-b7b8-0f0370245c4e" name="Changes" comment="init">
     <list default="true" id="a47f3859-06db-4db4-b279-8b8b22d69773" name="Changes" comment="">
+    <list default="true" id="ee351bca-aa85-4a98-bd0c-01b5ed2f347a" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/joshian_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/css/joshian_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/joshian_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/joshian_page.html" afterDir="false" />
 >>>>>>> ab7ea73ee723271561f17dd040d9bbf5025fdf27
 >>>>>>> 560cd2e4e00b92fe574f0d3a8efe0ae834748dff
       <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/derick_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/derick_page.html" afterDir="false" />
@@ -49,8 +53,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev_branch" />
-<<<<<<< HEAD
+        <entry key="$PROJECT_DIR$" value="derick_branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,15 +64,16 @@
     &quot;assignee&quot;: &quot;kingderick55&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ElondoPrinceDarlins/CAMER_TECH.git&quot;,
-    &quot;accountId&quot;: &quot;6ef9f332-09a7-44b8-8a67-fe630a71e926&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ElondoPrinceDarlins/CAMER_TECH.git",
+    "accountId": "626a01fe-7eb8-4348-92dc-9ab0909ae409"
   }
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -124,27 +128,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Fangmbeng__branch&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
-=======
-<<<<<<< HEAD
->>>>>>> 560cd2e4e00b92fe574f0d3a8efe0ae834748dff
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Fangmbeng__branch&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "elondo__branch"
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Merging nestorngwa__branch",
 <<<<<<< HEAD
+    "git-widget-placeholder": "dev__branch",
     "git-widget-placeholder": "dev__branch",
     "kotlin-language-version-configured": "true"
 =======

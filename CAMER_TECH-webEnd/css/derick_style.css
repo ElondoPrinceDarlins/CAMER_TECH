@@ -172,3 +172,89 @@ nav {
   flex-direction: column;
 }
 }
+  
+
+
+/*categories*/
+.categories {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.categories h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  outline: none;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.category a {
+  text-decoration: none;
+  
+}
+.category i {
+  font-size: 64px;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.category span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.category.show-more {
+  background-color: #231B50;
+  color: white;
+}
+
+.category.show-more:hover {
+  background-color: #231B50;
+}
+
+.category.show-more i,
+.category.show-more span {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .category-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .category-container {
+      grid-template-columns: 1fr;
+  }
+}
