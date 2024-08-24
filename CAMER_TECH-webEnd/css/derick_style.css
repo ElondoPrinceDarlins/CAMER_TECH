@@ -1,4 +1,4 @@
-* {
+#derick {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,7 +21,7 @@ nav {
   padding: 20px 50px;
 }
 
-.logo {
+.dericklogo {
   color: black;
   font-size: 24px;
   font-weight: bold;
@@ -78,13 +78,13 @@ nav {
   height: 50px;
   border-radius: 50px;
 }
-.header-content {
+.derickheader-content {
   background-color: #231B50;
   display: flex;
   height: calc(90vh - 80px);
 }
 
-.header-text {
+.derickheader-text {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@ nav {
   padding-left: 50px;
 }
 
-.header-text h1 {
+.derickheader-text h1 {
   font-size: 97px;
   margin-bottom: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -100,12 +100,12 @@ nav {
 
 }
 
-.header-text p {
+.derickheader-text p {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
-.header-image {
+.derickheader-image {
   flex: 1;
   background-image: url('/CAMER_TECH-webEnd/img/hht-removebg-preview\ \(1\).png');
   background-size: cover;
@@ -136,7 +136,7 @@ nav {
 
 .dropdown-content a {
   color: black;
-  
+
   padding: 12px 16px;
   text-decoration: none;
   display: block;

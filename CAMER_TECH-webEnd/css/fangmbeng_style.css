@@ -64,7 +64,7 @@
 
 #footer-email-btn {
     height: 40px;
-    width: 100%;
+    width: 50%;
     max-width: 200px; /* Increased max-width for better visibility */
     cursor: pointer;
     background-color: green;
@@ -73,6 +73,7 @@
     color: white;
     font-size: 16px;
     font-weight: bold;
+    margin: 0px;
     transition: background-color 0.3s, opacity 0.3s;
 }
 
@@ -86,27 +87,28 @@
 .footer_2 {
     flex: 1 1 200px;
     margin: 0 15px; /* Reduced margin to optimize space on smaller screens */
+
 }
 
 .footer_1 h4,
 .footer_2 h4 {
     color: rgb(180, 178, 178);
-    margin-bottom: 1rem;
-    margin-right: 40px;
     font-weight: bold;
+    margin-left: 120px;
 }
 
-.footer_1 .list,
-.footer_2 div {
+.footer_1 .list_1,
+.footer_2 .list_2 {
     display: flex;
     flex-direction: column;
+    margin-left: 120px;
 }
 
 .footer_1 button,
 .footer_2 button {
     background: whitesmoke;
     border: none;
-    margin-left: 120px;
+    margin-left: 105px;
     border-radius: 4px;
     margin-bottom: 10px;
     padding: 10px 15px;
