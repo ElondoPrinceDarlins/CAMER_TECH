@@ -32,16 +32,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 >>>>>>> ab7ea73ee723271561f17dd040d9bbf5025fdf27
 >>>>>>> 560cd2e4e00b92fe574f0d3a8efe0ae834748dff
+      <change beforePath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/derick_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/CAMER_TECH-webEnd/pages/derick_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "git-widget-placeholder": "joshian__branch"
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -100,6 +97,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kingderick55&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ElondoPrinceDarlins/CAMER_TECH.git&quot;,
+    &quot;accountId&quot;: &quot;6ef9f332-09a7-44b8-8a67-fe630a71e926&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -124,8 +133,14 @@
 =======
 <<<<<<< HEAD
 >>>>>>> 560cd2e4e00b92fe574f0d3a8efe0ae834748dff
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Fangmbeng__branch&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "git-widget-placeholder": "elondo__branch"
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Merging nestorngwa__branch",
@@ -154,8 +169,7 @@
     "git-widget-placeholder": "nestorngwa__branch"
 >>>>>>> 8a7bec2728dc7a92bb08c3873a6787c1922a9d5f
   }
-<<<<<<< HEAD
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
 =======
 }]]></component>
