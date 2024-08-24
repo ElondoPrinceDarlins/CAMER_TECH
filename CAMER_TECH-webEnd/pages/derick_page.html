@@ -8,56 +8,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="">
 </head>
 <body>
-  <section id="derick">
-    <section class="hero">
-      <nav>
-          <div class="dericklogo">CAMER TECH</div>
-          <div class="nav-links">
-              <a href="#">Home</a>
-              <div class="dropdown">
-                <button class="dropbtn">Explore ▼</button>
-                <div class="dropdown-content">
-                    <a href="#">Chat</a>
-                    <a href="#">Dashboard</a>
-                    <a href="#">Technicians </a>
-                    <a href="#">Green computing</a>
-                    <a href="#">About</a>
-
-                </div>
-            </div>
-          <a href="#">Contact</a>
-          </div>
-          <div class="nav-buttons">
-              <button class="btn btn-secondary">Login</button>
-              <button class="btn btn-primary">Sign Up</button>
-          </div>
-          <div class="hamburger">
-           <span></span>
-           <span></span>
-           <span></span>
-        </div>
-      </nav>
-      <div class="derickHeader-content">
-          <div class="derickheader-text">
-              <h1>WELCOME TO <br> CAMER TECH</h1>
-              <p>The best place to find experts to solve issues <br> for different device types.Click the button to get started</p>
-              <button class="btn-hero">Get Started</button>
-          </div>
-          <div class="derickHeader-image"></div>
+<section id="derick">
+  <section class="hero">
+    <nav>
+      <div class="dericklogo">
+        <img src=".././img/camer_tech_logo-removebg-preview.png">
+        <h1>CAMER TECH</h1>
       </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Explore ▼</button>
+          <div class="dropdown-content">
+            <a href="#">Chat</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Technicians </a>
+            <a href="#">Green computing</a>
+            <a href=".././pages/aboutpage.html">About</a>
+
+          </div>
+        </div>
+        <a href=".././pages/contact_page.html">Contact</a>
+      </div>
+      <div class="nav-buttons">
+        <button class="btn btn-secondary">Login</button>
+        <button class="btn btn-primary">Sign Up</button>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <div class="derickHeader-content">
+      <div class="derickheader-text">
+        <h1>WELCOME TO <br> CAMER TECH</h1>
+        <p>The best place to find experts to solve issues <br> for different device types.Click the button to get started</p>
+        <button class="btn-hero">Get Started</button>
+      </div>
+      <div class="derickHeader-image"></div>
+    </div>
   </section>
 
 
-  </section>
-  <script>
-    const hamburger = document.querySelector('.hamburger');
+</section>
+<script>
+  const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const navButtons = document.querySelector('.nav-buttons');
 
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    navButtons.classList.toggle('active');
+  navLinks.classList.toggle('active');
+  navButtons.classList.toggle('active');
 });
-  </script>
+</script>
 </body>
 </html>
