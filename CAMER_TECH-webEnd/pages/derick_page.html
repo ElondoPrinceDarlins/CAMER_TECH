@@ -3,58 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/derick_style.css">
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <title>home</title>
+  <link rel="stylesheet" href="/CAMER_TECH-webEnd/css/derick_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="">
 </head>
 <body>
-<section id="derick">
-  <section id="derick_nav">
-    <nav class="navbar">
-      <div class="logo">CAMER TECH</div>
-      <input type="checkbox" id="toggle">
-      <label for="toggle" class="toggle-button">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <ul class="menu">
-        <li><a href="#">Find Service</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-       
-      </ul>
-      <div class="buttons" id="derick_buttons">
-        <a href="../../CAMER_TECH-webEnd/pages/authentication/login/../signup.html">
-          <button class="btn-primary">Sign Up</button>
-        </a>
-        <a href="../pages/authentication/signup.html">
-          <button class="btn-secondary">Login</button>
-        </a>
-        <a href="../pages/dashboard/dashboard.html">
-          <button class="btn-secondary">Dashboard</button>
-        </a>
-        
-      </div>
-    </nav>
-  </section>
-  <section id="header_body">
-    <div class="derickText">
-      <h2 id="derick_h2">HIGH QUALITY <br> SERVICES AT <br> YOUR DISPOSAL</h2>
-      <p id="derick_p">Make a selection from a wide list of <br>specialists to solve the problems of your <br> devices</p>
-      <div class="input-box">
-        <i class="uil uil-search"></i>
-        <input type="text" placeholder="Search problem..." />
-        <button class="button">search</button>
-      </div>
-    </div>
-    <div class="derickImage">
-      <img src="../img/hero%20image.png" alt="Placeholder Image">
-    </div>
-  </section>
+  <section id="derick">
+    <section class="hero">
+      <nav>
+          <div class="dericklogo">CAMER TECH</div>
+          <div class="nav-links">
+              <a href="#">Home</a>
+              <div class="dropdown">
+                <button class="dropbtn">Explore ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Chat</a>
+                    <a href="#">Dashboard</a>
+                    <a href="#">Services</a>
 
+                </div>
+            </div>
+          <a href="#">Contact</a>
+          </div>
+          <div class="nav-buttons">
+              <button class="btn btn-secondary">Login</button>
+              <button class="btn btn-primary">Sign Up</button>
+          </div>
+          <div class="hamburger">
+           <span></span>
+           <span></span>
+           <span></span>
+        </div>
+      </nav>
+      <div class="derickHeader-content">
+          <div class="derickheader-text">
+              <h1>WELCOME TO <br> CAMER TECH</h1>
+              <p>The best place to find experts to solve issues <br> for different device types.Click the button to get started</p>
+              <button class="btn-hero">Get Started</button>
+          </div>
+          <div class="derickHeader-image"></div>
+      </div>
+  </section>
+  </section>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navButtons = document.querySelector('.nav-buttons');
 
-</section>
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    navButtons.classList.toggle('active');
+});
+  </script>
 </body>
 </html>
-
