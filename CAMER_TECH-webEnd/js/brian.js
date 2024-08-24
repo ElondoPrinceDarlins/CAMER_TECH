@@ -1,71 +1,19 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+const carouselImages = document.getElementById('carouselImages');
+const leftArrow = document.getElementById('leftArrow');
+const rightArrow = document.getElementById('rightArrow');
 
-body {
-    font-family: Arial, sans-serif;
-}
+let currentIndex = 0;
 
-.carousel-container {
-    width: 80%;
-    margin: 50px auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel-slide {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-}
-
-.carousel-item {
-    min-width: 33.33%;
-    padding: 20px;
-}
-
-.carousel-item button {
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-.carousel-item img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.left-arrow {
-    left: 10px;
-}
-
-.right-arrow {
-    right: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .carousel-item {
-        min-width: 50%;
+rightArrow.addEventListener('click', () => {
+    if (currentIndex < 4) {
+        currentIndex++;
+        carouselImages.style.transform = `translateX(-${currentIndex * 25}%)`;
     }
-}
+});
 
-@media screen and (max-width: 480px) {
-    .carousel-item {
-        min-width: 100%;
+leftArrow.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        carouselImages.style.transform = `translateX(-${currentIndex * 25}%)`;
     }
-}
+});
