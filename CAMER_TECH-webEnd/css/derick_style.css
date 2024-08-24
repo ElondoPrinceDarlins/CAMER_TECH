@@ -78,7 +78,7 @@ nav {
   height: 50px;
   border-radius: 50px;
 }
-.derickheader-content {
+.derickHeader-content {
   background-color: #231B50;
   display: flex;
   height: calc(90vh - 80px);
@@ -105,7 +105,7 @@ nav {
   margin-bottom: 30px;
 }
 
-.derickheader-image {
+.derickHeader-image {
   flex: 1;
   background-image: url('/CAMER_TECH-webEnd/img/hht-removebg-preview\ \(1\).png');
   background-size: cover;
