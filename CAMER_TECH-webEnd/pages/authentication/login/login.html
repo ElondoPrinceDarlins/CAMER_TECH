@@ -1,42 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            logo
-        </title>
-        <link rel="stylesheet" href="../../../css/authentication/login.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href=".././../../../CAMER_TECH-webEnd/././././css/./authentication/login.css">
+</head>
+<body>
 
-    </head>
-    <bod>
-        <diV class="logo">
-        Camer Tech
-        </diV>
-<div class="wrapper">
-    <form action="">
-        <h1>Login</h1>
-        <div class="input-box">
-            <input type="number" placeholder=" Phone Number:" required>
-            <i class='bx bxs-user'></i>
+<div class="login-wrapper">
+  <div class="login-container">
+    <!-- Left Side (Image) -->
+    <div class="image-section">
+      <img src="../././../../../CAMER_TECH-webEnd/./img/login-logo.jpg" alt="Illustration" />
+    </div>
+
+    <!-- Right Side (Form) -->
+    <div class="login-section">
+      <h1>LOGIN</h1>
+      <p>Fill in your information and access your dashboard</p>
+
+      <form>
+        <div class="form-group">
+          <label for="email">e-mail</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
         </div>
-        <div class="input-box">
-            <input type="text" placeholder=" Email:" required>
-            <i class='bx bxs-envelope' ></i>
+        <div class="form-group password-group">
+          <label for="password">password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+          <button type="button" class="toggle-password" onclick="togglePassword()">Show</button>
         </div>
-        <div class="input-box">
-            <input type="password" placeholder=" password:" required>
-            <i class='bx bxs-lock-alt' ></i>
-        </div>
-        <div class="remember-password">
-            <label><input type="checkbox"> Remember me</label>
-            <a href="#">Forgot password</a>
-        </div>
-        <button type="submit" class="btn">Login</button>
-        <div class="register-link">
-            <p>Don't have an account?
-            <a href="#">Register</a></p>
-        </div>
-    </form>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+
+      <p class="signup-text">Don't yet have an account? <a href="#">signup</a></p>
+    </div>
+  </div>
 </div>
-    </bod>
+
+<script>
+  function togglePassword() {
+    var passwordField = document.getElementById("password");
+    var toggleBtn = document.querySelector(".toggle-password");
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      toggleBtn.textContent = "Hide";
+    } else {
+      passwordField.type = "password";
+      toggleBtn.textContent = "Show";
+    }
+  }
+</script>
+
+</body>
 </html>
