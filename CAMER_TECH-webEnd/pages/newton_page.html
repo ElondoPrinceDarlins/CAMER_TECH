@@ -9,40 +9,107 @@
 </head>
 <body>
 <section id="newton">
+  <section class="slider-section">
+    <h2>Explore based on location</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slider">
+          <div class="slider-item">
+            <img src="../././img/yaounde.jpg" alt="Item 2">
+            <h1>CENTER</h1>
+            <p>Explore technicians found  <br> in the Center region</p>
+            <button>Learn More</button>
+          </div>
+          <div class="slider-item">
+            <img src=".././img/douala.jpg" alt="Item 3">
+            <h1>LITTORAL</h1>
+            <p>Explore technicians found  <br> in the Littoral region</p>
+            <button>Learn More</button>
+          </div>
+          <div class="slider-item">
+            <img src=".././img/buea.jpg" alt="Item 4">
+            <h1>SOUTH WEST</h1>
+            <p>Explore technicians found  <br> in the South west region</p>
+            <button>Learn More</button>
+          </div>
 
-  <div class="container">
-    <h1>why choose us?</h1>
-    <div class="grid">
-      <div class="grid-item">
-        <div class="number">1</div>
-        <p>Experienced and high quality technicians</p>
+          <div class="slider-item">
+            <img src=".././img/bamenda.jfif" alt="Item 1">
+            <h1>NORTH WEST</h1>
+            <p>Explore technicians found  <br> in the North west region</p>
+            <button>Learn More</button>
+          </div>
+          <
+          <div class="slider-item">
+            <img src=".././img/maroua.jpg" alt="Item 5">
+            <h1>FAR NORTH</h1>
+            <p>Explore technicians found  <br> in the Far north region</p>
+            <button>Learn More</button>
+          </div>
+          <div class="slider-item">
+            <img src=".././img/far%20north.jfif" alt="Item 6">
+            <h1>NORTH</h1>
+            <p>Explore technicians found  <br> in the North region </p>
+            <button>Learn More</button>
+          </div>
+          <div class="slider-item">
+            <img src=".././img/south.jfif" alt="Item 7">
+            <h1>SOUTH</h1>
+            <p>Explore technicians found  <br> in the South region</p>
+            <button>Learn More</button>
+          </div>
+          <div class="slider-item">
+            <img src=".././img/east.jfif" alt="Item 8">
+            <h1>EAST</h1>
+            <p>Explore technicians found  <br> in the East region</p>
+            <button>Learn More</button>
+          </div>
+          <div class="slider-item">
+            <img src=".././img/far%20north.jfif" alt="Item 9">
+            <h1>WEST</h1>
+            <p>Explore technicians found  <br> in the West region</p>
+            <button>Learn More</button>
+          </div>
+          <div class="slider-item">
+            <img src=".././img/adamawa.jfif" alt="Item 10">
+            <h1>ADAMAWA</h1>
+              <p>Explore technicians found  <br> in the Adamawa region</p>
+            <button>Learn More</button>
+
+          </div>
+        </div>
+        <!-- Add 7 more slider-item divs here, following the same structure -->
       </div>
-      <div class="grid-item">
-        <div class="number">2</div>
-        <p>Dedicated 24/7 support</p>
-      </div>
-      <div class="grid-item">
-        <div class="number">3</div>
-        <p>30 days money back guarantee</p>
-      </div>
-      <div class="grid-item">
-        <div class="number">4</div>
-        <p>Agile and fast working style</p>
-      </div>
-      <div class="grid-item">
-        <div class="number">5</div>
-        <p>Flexible and affordable prices</p>
-      </div>
-      <div class="grid-item">
-        <div class="number">6</div>
-        <p>Free consultation and guidance</p>
-      </div>
+      <button class="slider-arrow left">&lt;</button>
+      <button class="slider-arrow right">&gt;</button>
     </div>
-  </div>
-
-
-
+  </section>
 </section>
+
+
+<script>
+  const slider = document.querySelector('.slider');
+        const leftArrow = document.querySelector('.slider-arrow.left');
+        const rightArrow = document.querySelector('.slider-arrow.right');
+        const itemWidth = document.querySelector('.slider-item').offsetWidth + 32; // 32px for margins
+        let currentPosition = 0;
+
+        leftArrow.addEventListener('click', () => {
+            if (currentPosition < 0) {
+                currentPosition += itemWidth;
+                slider.style.transform = `translateX(${currentPosition}px)`;
+            }
+        });
+
+        rightArrow.addEventListener('click', () => {
+            const maxPosition = -(itemWidth * 7); // 10 items - 3 visible items
+            if (currentPosition > maxPosition) {
+                currentPosition -= itemWidth;
+                slider.style.transform = `translateX(${currentPosition}px)`;
+            }
+        });
+
+</script>
 </body>
 </html>
 
