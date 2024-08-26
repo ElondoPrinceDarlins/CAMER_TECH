@@ -4,5 +4,5 @@ CAMER_TECH-MobileEnd/.gitignore
 CAMER_TECH-MobileEnd/dist/
 CAMER_TECH-MobileEnd/build/
 .idea
-package-lock.json
-CAMER_TECH-MobileEnd
+
+CAMER_TECH-BackEnd/node_modules
