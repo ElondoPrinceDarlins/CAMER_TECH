@@ -22,11 +22,17 @@ nav {
 }
 
 .dericklogo {
-  color: black;
+display:flex;
+}
+.dericklogo h1 {
+color: black;
   font-size: 24px;
   font-weight: bold;
 }
-
+.dericklogo img {
+margin-top:15px;
+ height:70px;
+}
 .nav-links {
   display: flex;
   gap: 40px;
