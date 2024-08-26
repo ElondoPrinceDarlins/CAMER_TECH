@@ -10,4 +10,4 @@ includeHTML('brian','/pages/brian_page.html');
 includeHTML('joshian','/pages/joshian_page.html');
 includeHTML('browndon','/pages/newton_page.html');
 includeHTML('emil','/pages/emil_page.html');
-includeHTML('Fangmbeng','/pages/fangmbeng_page.html');
+includeHTML('fangmbeng','/pages/fangmbeng_page.html');
