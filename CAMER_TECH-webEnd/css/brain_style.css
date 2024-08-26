@@ -62,7 +62,7 @@
            transform: translateY(-50%);
            z-index: 2;
            border-radius: 50%;
-           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+           box-shadow: 0 2px 5px rgba(248, 246, 246, 0.2);
        }
 
        .left-arrow {
