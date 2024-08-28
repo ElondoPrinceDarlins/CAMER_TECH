@@ -37,6 +37,7 @@ body {
 }
 
 .banner-image img {
+    background-image: url('.././img/enimname.jpeg');
     max-width: 100%;
     border-radius: 10px;
 }
