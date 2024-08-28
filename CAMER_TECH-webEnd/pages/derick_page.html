@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>home</title>
-  <link rel="stylesheet" href="../css/derick_style.css">
+  <title>Home</title>
+  <link rel="stylesheet" href=".././css/derick_style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="">
 </head>
 <body>
@@ -12,55 +12,44 @@
   <section class="hero">
     <nav>
       <div class="dericklogo">
-        <img src=".././img/camer_tech_logo-removebg-preview.png">
+        <img src=".././img/camer_tech_logo-removebg-preview.png" alt="Camer Tech Logo">
         <h1>CAMER TECH</h1>
       </div>
       <div class="nav-links">
         <a href="#">Home</a>
         <div class="dropdown">
-          <button class="dropbtn">Explore ▼</button>
+          <a href="#" class="dropbtn">Explore ▼</a>
           <div class="dropdown-content">
-            <a href="#">Chat</a>
-            <a href="#">Dashboard</a>
-            <a href="#">Technicians </a>
-            <a href="#">Green computing</a>
-            <a href=".././pages/aboutpage.html">About</a>
-
+            <a href=".././pages/./chatbot/index.html">Chat AI</a>
+            <a href=".././pages/././dashboard/dashboard.html">Dashboard</a>
+            <a href=".././pages/./technicians/technicians.html">Technicians</a>
+            <a href="../././pages/./greencomputing/greencomputing.html">Green Computing</a>
+            <a href=".././pages/./about/aboutpage.html">About</a>
           </div>
         </div>
         <a href=".././pages/contact_page.html">Contact</a>
       </div>
       <div class="nav-buttons">
-        <button class="btn btn-secondary">Login</button>
-        <button class="btn btn-primary">Sign Up</button>
+        <a href=".././pages/./authentication/./login/login.html" class="btn btn-secondary">Login</a>
+        <a href=".././pages/./authentication/./signup.html" class="btn btn-primary">Sign Up</a>
       </div>
       <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
     </nav>
     <div class="derickHeader-content">
       <div class="derickheader-text">
         <h1>WELCOME TO <br> CAMER TECH</h1>
-        <p>The best place to find experts to solve issues <br> for different device types.Click the button to get started</p>
-        <button class="btn-hero">Get Started</button>
+        <p>The best place to find experts to solve issues <br> for different device types. Click the button to get started.</p>
+        <a href=".././pages/./authentication/signup.html" class="btn-hero">Get Started</a>
       </div>
       <div class="derickHeader-image"></div>
     </div>
   </section>
-
-
 </section>
-<script>
-  const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-const navButtons = document.querySelector('.nav-buttons');
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  navButtons.classList.toggle('active');
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>
