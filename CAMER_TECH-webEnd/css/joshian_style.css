@@ -1,66 +1,49 @@
-/* General Styling */
+
 #joshian {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-h2 {
-    margin-top: 40px;
-    color: #333;
-}
-
-.faq-button {
-    display: block;
-    width: 80%;
-    margin: 20px auto;
-    padding: 15px;
-    font-size: 18px;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover Effect */
-.faq-button:hover {
-    background-color: #e0e0e0;
-}
-
-/* Responsive Design */
-
-/* For small screens like mobile devices */
-@media (max-width: 600px) {
-    .faq-button {
-        width: 90%;
-        font-size: 16px;
-        padding: 12px;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
     }
+    .faq-container {
+        max-width: 800px;
 
-    h2 {
-        font-size: 24px;
-    }
-}
 
-/* For medium screens like tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .faq-button {
-        width: 85%;
-        font-size: 17px;
     }
-}
-
-/* For larger screens like desktops */
-@media (min-width: 1025px) {
-    .faq-button {
-        width: 60%;
+    .faq-item {
+     height: 15vh;
+     width: 165vh;
+        background-color: #fff;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-
-    h2 {
-        font-size: 32px;
+    h1 {
+        padding: 0px 0px 0px 450px ;
     }
-}
+    .faq-question {
+        padding: 20px;
+        cursor: pointer;
+        position: relative;
+        font-weight: bold;
+    }
+    .faq-question::after {
+        content: '\25BC';
+        position: absolute;
+        right: 20px;
+        transition: transform 0.3s ease;
+    }
+    .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+    .faq-item.active .faq-question::after {
+        transform: rotate(180deg);
+    }
+    .faq-item.active .faq-answer {
+        max-height: 1000px;
+        padding: 20px;
+    }
