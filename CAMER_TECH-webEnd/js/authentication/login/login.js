@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Computer Brands</title>
-    <link rel="" href="CAMER_TECH-webEnd/css/login.css">
-</head>
-<body>
 
 
-
-</body>
-</html>
+  function togglePassword() {
+    var passwordField = document.getElementById("password");
+    var toggleBtn = document.querySelector(".toggle-password");
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      toggleBtn.textContent = "Hide";
+    } else {
+      passwordField.type = "password";
+      toggleBtn.textContent = "Show";
+    }
+  }
