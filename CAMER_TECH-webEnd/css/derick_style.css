@@ -1,4 +1,4 @@
-/* Reset and General Styles */
+
 #derick{
   margin: 0;
   padding: 0;
@@ -9,14 +9,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Hero Section */
+
 .hero {
   background-color: white;
   height: 90vh;
   color: white;
 }
 
-/* Navbar Styles */
 nav {
   display: flex;
   justify-content: space-between;
@@ -37,6 +36,7 @@ nav {
 }
 
 .dericklogo img {
+
   margin-top: 15px;
   height: 70px;
 }
@@ -47,6 +47,7 @@ nav {
 }
 
 .nav-links a {
+text-decoration:none;
   color: black;
   font-family: sans-serif;
   font-weight: bold;
@@ -56,6 +57,7 @@ nav {
 .nav-buttons {
   display: flex;
   gap: 10px;
+  text-decoration:none;
 }
 
 .hamburger {
@@ -72,7 +74,7 @@ nav {
   transition: 0.4s;
 }
 
-/* Button Styles */
+
 .btn {
   padding: 10px 20px;
   font-size: 15px;
@@ -83,27 +85,32 @@ nav {
 }
 
 .btn-secondary {
+text-decoration:none;
   background-color: #E1CACA;
   color: black;
 }
 
 .btn-primary {
+  text-decoration:none;
   background-color: #231B50;
   color: white;
 }
 
 .btn-hero {
-  background-color: red;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  width: 170px;
-  height: 50px;
-  border-radius: 50px;
+background-color:red;
+color:white;
+text-decoration:none;
+width:120px;
+height:40px;
+border-radius:30px
+}
+.btn-hero a {
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
-/* Header Content */
+
 .derickHeader-content {
   background-color: #231B50;
   display: flex;
@@ -131,8 +138,9 @@ nav {
 }
 
 .derickHeader-image {
-  flex: 1;
-  background-image: url('../img/hht-removebg-preview.png');
+ flex:1;
+ background-image: url('../img/hht-removebg-preview\ \(1\).png');
+
   background-size: cover;
   background-position: center;
 }
@@ -154,7 +162,7 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
