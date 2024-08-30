@@ -1,5 +1,5 @@
 {
-  "name": "camertech",
+  "name": "camer-tech",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:CAMERTECH": "node dist/camertech/server/server.mjs"
+    "serve:ssr:CAMER_TECH": "node dist/camer-tech/server/server.mjs"
   },
   "private": true,
   "dependencies": {

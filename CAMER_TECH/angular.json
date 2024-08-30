@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CAMERTECH": {
+    "CAMER_TECH": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/camertech",
+            "outputPath": "dist/camer-tech",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "CAMERTECH:build:production"
+              "buildTarget": "CAMER_TECH:build:production"
             },
             "development": {
-              "buildTarget": "CAMERTECH:build:development"
+              "buildTarget": "CAMER_TECH:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "35e67888-c431-4002-abc8-360891993dec"
   }
 }
