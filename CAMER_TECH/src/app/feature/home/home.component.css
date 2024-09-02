@@ -118,7 +118,7 @@ font-weight:bold;
             background-image: url('.././../../.././../CAMER_TECH/public/desugn2.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            color: #fff;
+
             padding: 4rem 2rem;
             margin: 2rem;
             text-align: center;
@@ -127,6 +127,7 @@ font-weight:bold;
 
         }
         .hero h2{
+        color:white;
             margin-top: 50px;
             font-size: 4rem;
             margin-bottom: 1rem;
