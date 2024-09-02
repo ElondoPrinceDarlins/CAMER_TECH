@@ -161,7 +161,6 @@ a {
 
 .overlay-left {
     transform: translateX(-10%);
-    background-image: url(./login-logo.jpg);
     background-size: cover;
       background-repeat: no-repeat;
 }
@@ -173,7 +172,6 @@ a {
 .overlay-right {
     right: 0;
     transform: translateX(0);
-    background-image: url(./login-logo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
