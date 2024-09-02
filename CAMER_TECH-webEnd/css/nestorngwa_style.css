@@ -5,7 +5,9 @@
 }
 
 .categories h2 {
+  font-family:sans-serif;
   text-align: center;
+  margin-top:4rem;
   margin-bottom: 2rem;
   font-size: 2.5rem;
 }
@@ -83,11 +85,11 @@
   }
 }
   .category img {
-    
+
     width: 100%;
     height: 130px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
-    
+
   }

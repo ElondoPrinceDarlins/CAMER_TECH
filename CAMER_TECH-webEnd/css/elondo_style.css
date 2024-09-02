@@ -30,21 +30,24 @@ body {
 
 .step {
   text-align: center;
+  width: 7vh;
+    height: 40px;
+    margin-bottom:20px;
+    border-radius:70px;
+    background-color: #231B50;
 }
 
 .step-button {
-  width: 80px;
-  height: 80px;
-  background-color: #231B50;
+
   color: white;
   border: none;
-  border-radius: 50%;
+
   font-size: 24px;
   cursor: pointer;
 }
 
 .step p {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 10px;
 }
