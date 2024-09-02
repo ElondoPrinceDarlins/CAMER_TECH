@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.signup-container {
+width:120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Image Section Styling */
+.image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sign-Up Section Styling */
+.signup-section {
+  padding: 40px;
+  text-align: left;
+}
+
+.signup-section h1 {
+  margin-bottom: 20px;
+}
+
+.signup-section p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Gender Group Styling - Horizontal Alignment */
+.gender-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-options {
+  display: flex;
+  gap: 20px; /* Adds space between gender options */
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-text {
+  margin-top: 20px;
+}
+
+.login-text a {
+  color: red;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .signup-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-section {
+    margin-bottom: 20px;
+  }
+
+  .signup-section {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 15px;
+  }
+
+  .image-section img {
+    width: 70%;
+  }
+
+  .form-group input {
+    padding: 8px;
+  }
+
+  .signup-btn {
+    padding: 8px;
+  }
+
+  .login-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 10px;
+  }
+
+  .image-section img {
+    width: 90%;
+  }
+
+  .form-group input {
+    padding: 6px;
+  }
+
+  .signup-btn {
+    padding: 6px;
+  }
+
+  .login-text {
+    font-size: 12px;
+  }
+}
