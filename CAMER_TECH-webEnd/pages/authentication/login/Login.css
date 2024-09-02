@@ -233,6 +233,20 @@ button {
 button:active {
     transform: scale(0.95);
 }
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+form .ghost:hover,
+button:hover {
+    background-color: #0061C7;
+    border-color: #0061C7;
+}
 
 
 
