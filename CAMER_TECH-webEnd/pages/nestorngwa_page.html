@@ -3,34 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services</title>
-  <link rel="stylesheet" href=".././css/nestorngwa_style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/nestorngwa_style.css">
 </head>
 <body>
-<body> <section id="nestorngwa1>
-<div class="container"><div class="neslogotext">We resolve issues and problems of more than 100 computer brands</div>
-    <div class="neslogoicons"> <div class="sub-div">
-      <img src="../img/./apple.png" alt="jhb">
-      <img src=".././img/./dell.png" alt="ygtv">
-      <img src=".././img/./hp.png" alt="ygtc">
-      <img src=".././img/./lenovo.png" alt="uygfj">
-    </div></div></div>
-  </section>
-  <section id="nestorngwa2"><div class="nesservicetext">We resolve issues and problems of more than 100 computer brands</div>
-    <div class="categories">
-      <button>Desktop</button>
-      <button>Virus Removal</button>
-      <button>Software Update</button>
-      <button>Device Setup</button>
-      <button>Laptop Repair</button>
-      <button>Data Recovery</button>
-      <button>Memory Update</button>
-      <button>System Installation</button>
-      <button>Keyboard/Mouse Repair</button>
-      <button>Network Issues</button>
-      <button>Device Booting</button>
+  <section id="nestorngwa"></section>
+  <section class="categories">
+    <h2>Popular I.T services </h2>
+    <div class="category-container">
+        <button class="category">
+          <a href="1">
+          <img src="../img/icon-removebg-preview.png" alt="">
+            <span>Desktop repair</span></a>
+          </a>
+        </button>
+        <button class="category">
+          <a>
+          <img src="../img/icon-removebg-preview.png" alt="">
+            <span>System crashing</span></a>
+        </button>
+        <button class="category">
+           <a href="1">
+            <img src="../img/icon-removebg-preview.png" alt="">
+            <span>Device booting</span>
+           </a>
+        </button>
+        <button class="category">
+          <a href="1">
+            <img src="../img/icon-removebg-preview.png" alt="">
+            <span>Data recovery</span>
+          </a>
+        </button>
+        <button class="category">
+           <a href="1">
+            <img src="../img/icon-removebg-preview.png" alt="">
+            <span>Memory upgrade</span>
+           </a>
+        </button>
+        <button class="category show-more">
+           <a href="1">
+            <span>Show More</span>
+           </a>
+        </button>
     </div>
-  </div>
-</div>
+</section>
+  </section>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navButtons = document.querySelector('.nav-buttons');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    navButtons.classList.toggle('active');
+});
+  </script>
 </body>
 </html>

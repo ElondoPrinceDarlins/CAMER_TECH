@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+   
+    min-height: 100vh;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+main {
+    
+    padding: 20px;
+    max-width: 800px;
+   
+   
+    
+}
+.profile-header {
+    background-color: #231B50;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width:169vh;
+    height: 50vh;
+}
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    padding: 20px 40px 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.profile-info h1 {
+    margin: 0;
+}
+.chat-box {
+    border: 1px solid #ccc;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.payment-method {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}

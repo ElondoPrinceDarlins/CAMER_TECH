@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background:#231B50;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background: #f39c12;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.categories select, .auth-buttons button {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.search-filters select, .search-filters input {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-filters button {
+    padding: 10px 20px;
+    border: none;
+    background: #f39c12;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Featured Technicians */
+.featured-technicians {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.featured-technicians h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.technician-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.technician-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.tech-info {
+    flex: 1;
+}
+
+.tech-info h3 {
+    margin: 0;
+}
+
+.tech-info button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tech-info button:first-child {
+    background: #3498db;
+    color: #fff;
+}
+
+.tech-info button:last-child {
+    background: #2ecc71;
+    color: #fff;
+}
+
+/* Technicians Directory */
+.technicians-directory {
+    padding: 40px 0;
+    background: #f9f9f9;
+}
+
+.category-section {
+    margin-bottom: 40px;
+}
+
+.category-section h3 {
+    margin-bottom: 20px;
+}
+
+/* How It Works */
+.how-it-works {
+    padding: 40px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.how-it-works ol {
+    list-style: none;
+    padding: 0;
+}
+
+.how-it-works li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background: #f39c12;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}

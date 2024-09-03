@@ -5,7 +5,7 @@ const rightArrow = document.getElementById('rightArrow');
 let currentIndex = 0;
 
 rightArrow.addEventListener('click', () => {
-    if (currentIndex < 4) {
+    if (currentIndex < 6) {
         currentIndex++;
         carouselImages.style.transform = `translateX(-${currentIndex * 25}%)`;
     }

@@ -3,19 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ - Camer Tech</title>
-  <link rel="stylesheet" href="./../././../CAMER_TECH-webEnd/././css/joshian_style.css">
+  <title>FAQ Section</title>
+  <style>
+    #joshian {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .faq-container {
+      max-width: 560px; /* Reduced from 800px by 30% */
+      margin: 0 auto;
+    }
+    .faq-item {
+      background-color: #fff;
+      margin-bottom: 7px; /* Reduced from 10px by 30% */
+      border-radius: 4px; /* Reduced from 5px by 30% */
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      font-size: 1.4em; /* Reduced from default size */
+    }
+    .faq-question {
+      padding: 14px; /* Reduced from 20px by 30% */
+      cursor: pointer;
+      position: relative;
+      font-weight: bold;
+      font-size: 0.9em; /* Reduced font size */
+      transition: background-color 0.3s ease;
+    }
+    .faq-question:hover {
+      background-color: #f9f9f9;
+    }
+    .faq-question::after {
+      content: '\25BC';
+      position: absolute;
+      right: 14px; /* Reduced from 20px by 30% */
+      transition: transform 0.3s ease;
+      font-size: 0.8em; /* Reduced size of the arrow */
+    }
+    .faq-answer {
+      padding: 0 14px; /* Reduced from 20px by 30% */
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      font-size: 0.8em; /* Reduced font size */
+    }
+    .faq-item.active .faq-question::after {
+      transform: rotate(180deg);
+    }
+    .faq-item.active .faq-answer {
+      max-height: 700px; /* Reduced from 1000px by 30% */
+      padding: 14px; /* Reduced from 20px by 30% */
+    }
+  </style>
 </head>
 <body>
-<section id="joshian"></section>
+<section id="joshian">
+  <div class="faq-container">
+    <h1>FAQ</h1>
 
-<h2><center><B>Frequently Asked Questions</B></center></h2>
+    <div class="faq-item">
+      <div class="faq-question">What services do you offer?</div>
+      <div class="faq-answer">
+        <p>We offer web design, app development, digital marketing, and IT consulting. Our experts provide tailored solutions to meet your needs.</p>
+      </div>
+    </div>
 
-<a href="#" class="faq-button">Why choose CAMER TECH</a>
-<a href="#" class="faq-button">What type of services can I get at CAMER TECH</a>
-<a href="#" class="faq-button">Which type of computers can I fix at CAMER TECH</a>
-<a href="#" class="faq-button">What are the payment methods</a>
-<a href="#" class="faq-button">How can I get work done in lesser time</a>
+    <div class="faq-item">
+      <div class="faq-question">How much do your services cost?</div>
+      <div class="faq-answer">
+        <p>Pricing varies based on project scope and complexity. We offer customized quotes. Contact us for a detailed estimate.</p>
+      </div>
+    </div>
 
+    <div class="faq-item">
+      <div class="faq-question">What is your turnaround time?</div>
+      <div class="faq-answer">
+        <p>Turnaround depends on project size. Small projects: 2-4 weeks. Larger projects: several months. We'll provide a timeline during consultation.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Do you offer post-project support?</div>
+      <div class="faq-answer">
+        <p>Yes, we provide ongoing support and maintenance. We offer various packages to keep your project running smoothly after launch.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can you work internationally?</div>
+      <div class="faq-answer">
+        <p>Absolutely! We work with global clients, using various tools to ensure smooth collaboration across time zones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  });
+</script>
 </body>
 </html>

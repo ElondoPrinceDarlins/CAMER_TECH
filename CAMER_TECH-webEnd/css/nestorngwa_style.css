@@ -1,113 +1,95 @@
-<<<<<<< HEAD
+
 #nestor{
-<<<<<<< HEAD
-       background-color: #e9ece3;
-=======
-       background-color: #E9ECE3;
->>>>>>> ab7ea73ee723271561f17dd040d9bbf5025fdf27
-       font-family: Arial, sans-serif;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       height: 100vh;
-       margin: 0;
-   }
-=======
-#nestorngwa1{
-    display: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    height: 50vh;
-    margin-left: 10%;
-    display: grid;
-           grid-template-columns: repeat(3, 1fr);
-           gap: 10px;
-           justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
 }
-.neslogotext{
-    margin-top: 30px;
+
+.categories h2 {
+  font-family:sans-serif;
+  text-align: center;
+  margin-top:4rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
-.neslogoicons{
-    height: 30vh;
-    margin-top: 30px;
-    width: 50%;
-    display: flex;
-    margin-left: 100px;
-    background-color: none;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  outline: none;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.category a {
+  text-decoration: none;
+
+}
+.category i {
+  font-size: 64px;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.category span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.category.show-more {
+  background-color: #231B50;
+  color: white;
+}
+
+.category.show-more:hover {
+  background-color: #231B50;
+}
+
+.category.show-more i,
+.category.show-more span {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .category-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .category-container {
+      grid-template-columns: 1fr;
+
+  }
+}
+  .category img {
+
     width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
->>>>>>> 8a7bec2728dc7a92bb08c3873a6787c1922a9d5f
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 
-   .container {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 100%;
-       max-width: 800px;
-       padding: 20px;
-   }
-
-
-
-   .sub-div h1 {
-       font-weight: bold;
-   }
-
-   .highlight {
-       color: red;
-   }
-
-   .see-more {
-       display: block;
-       margin: 20px auto;
-       padding: 10px 20px;
-       font-weight: bold;
-       background-color: #eee;
-       border: none;
-       border-radius: 5px;
-       cursor: pointer;
-   }
-
-   .categories {
-       display: grid;
-       grid-template-columns: repeat(3, 1fr);
-       gap: 10px;
-       justify-content: center;
-   }
-
-   .categories button {
-       width: 100%;
-       padding: 10px;
-       font-weight: bold;
-       background-color: #eee;
-       border: none;
-       border-radius: 5px;
-       cursor: pointer;
-   }
-
-   @media (max-width: 768px) {
-       .image-container {
-           flex-direction: column;
-           align-items: center;
-       }
-
-       .image-box {
-           width: 80%;
-       }
-
-       .categories {
-           grid-template-columns: repeat(2, 1fr);
-       }
-   }
-
-   @media (max-width: 480px) {
-       .categories {
-           grid-template-columns: 1fr;
-       }
-   }
+  }

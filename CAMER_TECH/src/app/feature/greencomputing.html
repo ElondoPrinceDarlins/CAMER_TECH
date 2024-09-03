@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Computing - TechXperts Marketplace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    :root {
+        --primary-color: #4CAF50;
+        --secondary-color: #45a049;
+        --accent-color: #8BC34A;
+        --background-color: #E8F5E9;
+        --text-color: #333;
+        --card-color: #ffffff;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3 {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .hero {
+        background: url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero h2 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .section {
+        padding: 60px 0;
+        background-color: var(--card-color);
+        margin-bottom: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .section h3 {
+        font-size: 2em;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+    }
+
+    .green-practices {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .practice {
+        flex-basis: calc(50% - 20px);
+        margin-bottom: 40px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .practice i {
+        font-size: 2em;
+        color: var(--accent-color);
+        margin-right: 20px;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 40px 0;
+        border-radius: 10px;
+    }
+
+    .stat h4 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .cta {
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .cta h3 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: var(--accent-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: var(--secondary-color);
+    }
+
+    .green-tips {
+        background-color: #E8F5E9;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+
+    .green-tips h4 {
+        color: var(--primary-color);
+        margin-bottom: 15px;
+    }
+
+    .green-tips ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .green-tips li {
+        margin-bottom: 10px;
+        padding-left: 25px;
+        position: relative;
+    }
+
+    .green-tips li::before {
+        content: '✔';
+        color: var(--accent-color);
+        position: absolute;
+        left: 0;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Green Computing</h1>
+</header>
+
+<div class="hero">
+  <div class="hero-content">
+    <h2>Embracing Sustainable Technology</h2>
+    <p>Discover how green computing is shaping the future of technology and our planet.</p>
+  </div>
+</div>
+
+<div class="container">
+  <section class="section">
+    <h3>What is Green Computing?</h3>
+    <p>Green computing, also known as sustainable computing or eco-friendly computing, refers to the environmentally responsible and eco-friendly use of computers and their resources. It focuses on reducing the environmental impact of technology throughout its lifecycle, from design and manufacturing to use and disposal.</p>
+    <p>The primary objectives of green computing include:</p>
+    <ul>
+      <li>Reducing energy consumption</li>
+      <li>Minimizing electronic waste</li>
+      <li>Promoting the use of sustainable materials</li>
+      <li>Optimizing resource allocation</li>
+      <li>Encouraging recycling and reuse of electronic components</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h3>Green Computing Practices</h3>
+    <div class="green-practices">
+      <div class="practice">
+        <i class="fas fa-lightbulb"></i>
+        <div>
+          <h4>Energy Efficiency</h4>
+          <p>Implementing energy-efficient hardware and software solutions to reduce power consumption without compromising performance.</p>
+        </div>
+      </div>
+      <div class="practice">
+        <i class="fas fa-recycle"></i>
+        <div>
+          <h4>E-Waste Management</h4>
+          <p>Proper disposal and recycling of electronic devices to minimize environmental impact and recover valuable materials.</p>
+        </div>
+      </div>
+      <div class="practice">
+        <i class="fas fa-cloud"></i>
+        <div>
+          <h4>Virtualization</h4>
+          <p>Using virtual machines to maximize hardware utilization and reduce the need for physical servers.</p>
+        </div>
+      </div>
+      <div class="practice">
+        <i class="fas fa-leaf"></i>
+        <div>
+          <h4>Sustainable Materials</h4>
+          <p>Using eco-friendly materials in manufacturing and packaging to reduce environmental impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <h4>40%</h4>
+      <p>Potential energy savings through green computing practices</p>
+    </div>
+    <div class="stat">
+      <h4>50M tons</h4>
+      <p>Annual e-waste generated globally</p>
+    </div>
+    <div class="stat">
+      <h4>70%</h4>
+      <p>Of e-waste can be recycled or reused</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Benefits of Green Computing</h3>
+    <p>Adopting green computing practices offers numerous benefits:</p>
+    <ul>
+      <li>Reduced energy consumption and lower electricity costs</li>
+      <li>Decreased carbon footprint and environmental impact</li>
+      <li>Extended lifespan of devices through proper maintenance and upgrades</li>
+      <li>Improved corporate social responsibility and brand image</li>
+      <li>Compliance with environmental regulations and standards</li>
+      <li>Conservation of natural resources through efficient use and recycling</li>
+    </ul>
+  </section>
+
+  <section class="green-tips">
+    <h4>Green Computing Tips for Everyday Users</h4>
+    <ul>
+      <li>Enable power-saving modes on your devices</li>
+      <li>Unplug chargers and devices when not in use</li>
+      <li>Use energy-efficient LED monitors</li>
+      <li>Opt for laptops over desktop computers when possible</li>
+      <li>Properly recycle or donate old electronics</li>
+      <li>Use cloud storage to reduce local storage needs</li>
+      <li>Print double-sided and use recycled paper</li>
+      <li>Adjust screen brightness to conserve energy</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <h3>Join the Green Computing Revolution</h3>
+    <p>Be part of the solution and make a positive impact on the environment through sustainable technology practices.</p>
+    <a href="#" class="btn">Learn More About Green IT</a>
+  </section>
+</div>
+</body>
+</html>

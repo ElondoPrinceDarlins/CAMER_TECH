@@ -22,6 +22,7 @@ body {
 }
 
 .signup-container {
+width:120vh;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,66 +1,72 @@
-/* General Styling */
-#joshian {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-h2 {
-    margin-top: 40px;
-    color: #333;
-}
-
-.faq-button {
-    display: block;
-    width: 80%;
-    margin: 20px auto;
-    padding: 15px;
-    font-size: 18px;
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover Effect */
-.faq-button:hover {
-    background-color: #e0e0e0;
-}
-
-/* Responsive Design */
-
-/* For small screens like mobile devices */
-@media (max-width: 600px) {
-    .faq-button {
-        width: 90%;
-        font-size: 16px;
-        padding: 12px;
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    #joshian {
+      padding: 24px; /* Increased by 20% */
+    }
+    .faq-container {
+      max-width: 960px; /* Increased from 800px by 20% */
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    h1 {
+      width: 100%;
+      text-align: center;
+      color: #333;
+      font-size: 1.8em; /* Increased by 20% */
+      margin-bottom: 24px; /* Increased by 20% */
+    }
+    .faq-item {
+      background-color: #fff;
+      margin-bottom: 18px; /* Increased by 20% */
+      border-radius: 5px; /* Slightly increased */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: calc(50% - 12px); /* Adjusted for increased margin */
+    }
+    .faq-question {
+      padding: 18px; /* Increased by 20% */
+      cursor: pointer;
+      position: relative;
+      font-weight: bold;
+      font-size: 1.08em; /* Increased by 20% */
+      transition: background-color 0.3s ease;
+    }
+    .faq-question:hover {
+      background-color: #f9f9f9;
+    }
+    .faq-question::after {
+      content: '\25BC';
+      position: absolute;
+      right: 18px; /* Increased by 20% */
+      transition: transform 0.3s ease;
+    }
+    .faq-answer {
+      padding: 0 18px; /* Increased by 20% */
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      font-size: 1.02em; /* Increased by 20% */
+    }
+    .faq-item.active .faq-question::after {
+      transform: rotate(180deg);
+    }
+    .faq-item.active .faq-answer {
+      max-height: 360px; /* Increased by 20% */
+      padding: 18px; /* Increased by 20% */
     }
 
-    h2 {
-        font-size: 24px;
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .faq-item {
+        width: 100%; /* Full width on smaller screens */
+      }
+      .faq-container {
+        padding: 0 12px; /* Increased by 20% */
+      }
     }
-}
-
-/* For medium screens like tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .faq-button {
-        width: 85%;
-        font-size: 17px;
-    }
-}
-
-/* For larger screens like desktops */
-@media (min-width: 1025px) {
-    .faq-button {
-        width: 60%;
-    }
-
-    h2 {
-        font-size: 32px;
-    }
-}
