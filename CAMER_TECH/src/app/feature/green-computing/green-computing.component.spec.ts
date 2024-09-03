@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FooterComponent } from './footer.component';
+import { GreenComputingComponent } from './green-computing.component';
 
-describe('FooterComponent', () => {
-  let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
+describe('GreenComputingComponent', () => {
+  let component: GreenComputingComponent;
+  let fixture: ComponentFixture<GreenComputingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FooterComponent]
+      imports: [GreenComputingComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FooterComponent);
+    fixture = TestBed.createComponent(GreenComputingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
