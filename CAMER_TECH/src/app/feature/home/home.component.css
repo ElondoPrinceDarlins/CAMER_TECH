@@ -96,6 +96,72 @@ nav {
   color: white;
 }
 
+.btn-hero {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 30px
+}
+
+.btn-hero a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 
+.hero {
+  margin-bottom: 40px;
+  background-color: #231B50;
+  background-image: url('.././../../.././../CAMER_TECH/public/desugn2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  margin: 2rem;
+  text-align: center;
+  height: 60vh;
+  border-radius: 20px;
+}
+
+.hero h2 {
+  color: white;
+  margin-top: 50px;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero p {
+  color: rgb(215, 207, 207);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.search-bar {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  font-size: 20px;
+}
+
+.search-bar button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
