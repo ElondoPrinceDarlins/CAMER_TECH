@@ -45,7 +45,7 @@ a {
 
 .container {
     background: #fff;
-    
+
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
@@ -56,7 +56,7 @@ a {
 }
 
 .form-container {
-    
+
     position: absolute;
     top: 0;
     height: 100%;
@@ -71,7 +71,7 @@ a {
 
 .container.right-panel-active .sign-in-container {
     transform: translateX(100%);
-    
+
 }
 
 .sign-up-container {
@@ -101,7 +101,7 @@ a {
 }
 
 .overlay-container {
-    
+
     position: absolute;
     top: 0;
     left: 50%;
@@ -118,13 +118,13 @@ a {
 
 .overlay {
     background: #f2f1ed;
- 
+
     background: -webkit-linear-gradient(to right, #2a2652, #985ae9);
     background: linear-gradient(to right, #0061C7, #6A98F0);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
-    
+
     color: black;
     position: relative;
     left: -100%;
@@ -136,7 +136,7 @@ a {
 
 .container.right-panel-active .overlay {
     transform: translateX(50%);
-    
+
 }
 
 .overlay-panel {
@@ -158,13 +158,13 @@ a {
 .overlay-panel p {
     font-size: 1rem;
     font-weight: 500;
-} 
+}
 
 .overlay-left {
-    transform: translateX(-20%);
+    transform: translateX(-10%);
     background-image: url(./login-logo.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+      background-repeat: no-repeat;
 }
 
 .container.right-panel-active .overlay-left {
@@ -232,6 +232,20 @@ button {
 
 button:active {
     transform: scale(0.95);
+}
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+form .ghost:hover,
+button:hover {
+    background-color: #0061C7;
+    border-color: #0061C7;
 }
 
 

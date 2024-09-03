@@ -1,0 +1,105 @@
+:root {
+        --primary-color: #4a90e2;
+        --secondary-color: #50c878;
+        --background-color: #f0f4f8;
+        --text-color: #333;
+        --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #chromepage {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+    }
+
+    .chromeheader {
+        background-color:#231B50;
+        height:20vh;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .chromeheader h1 {
+       font-size:70px;
+           font-weight:bold;
+           font-family:sans-serif;
+           margin-top:30px;
+           }
+
+    .contentcontainer {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+
+    .delllogo {
+        text-align: center;
+       }
+
+    .logo img {
+
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .problems {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .problem-box {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .problem-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .problem-box h3 {
+        color: var(--primary-color);
+        margin-top: 0;
+    }
+
+    .cta {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 0.8rem 1.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #45b069;
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            grid-template-columns: 1fr;
+        }
+    }

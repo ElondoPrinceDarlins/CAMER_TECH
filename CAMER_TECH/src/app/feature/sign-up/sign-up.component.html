@@ -1,11 +1,88 @@
 <app-header/>
+<link rel="stylesheet" href="../sign-up/sign-up.component.css">
 <section class="h-screen bg-fuchsia-200">
   <div class="hero min-h-screen bg-base-200">
     <div class="hero-content text-center">
       <div class="max-w-md">
-        <h1 class="text-5xl font-bold">Hello there this is the sign Up section</h1>
-        <p class="py-6">CAMER TECH</p>
-        <h1>This is the work of derrick and Elondo to complete this section</h1>
+
+
+      </div>
+      <div class="signup-wrapper">
+        <div class="signup-container">
+
+          <!-- Left Side (Image Section with Heading) -->
+          <div class="image-section">
+            <h2 class="image-heading">CAMER_TECH</h2>
+            <img src=".././../.././../public/ii-removebg-preview.png" alt="Illustration" alt="Illustration" />
+          </div>
+
+          <!-- Right Side (Form Section) -->
+          <div class="signup-section">
+            <h1>Lets get started!</h1>
+            <p>Complete sign up to access your dashboard</p>
+
+            <form>
+              <div class="form-group">
+                <label for="name">name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+              </div>
+
+              <!-- Gender Section in Horizontal Line -->
+              <div class="form-group gender-group">
+                <label>gender</label>
+                <div class="gender-options">
+                  <input type="radio" id="male" name="gender" value="male" required>
+                  <label for="male">male</label>
+
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">female</label>
+
+                  <input type="radio" id="others" name="gender" value="others">
+                  <label for="others">others</label>
+                </div>
+              </div>
+              <!-- Gender Section in Horizontal Line -->
+
+
+
+              <div class="form-group">
+                <label for="email">e-mail</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">phone number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+              </div>
+
+              <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+              </div>
+
+              <div class="form-group">
+                <label for="repeat-password">repeat password</label>
+                <input type="password" id="repeat-password" placeholder="Repeat your password" required>
+              </div>
+              <div class="form-group gender-group">
+                <label>select an option</label>
+                <div class="gender-options">
+                  <input type="radio" id="male" name="gender" value="male" required>
+                  <label for="male">I want a technician</label>
+
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">I am a technician</label>
+
+
+                </div>
+              </div>
+
+              <a href="../././dashboard/dashboard.html">  <button type="submit"  class="signup-btn">Sign-up</button></a>
+            </form>
+
+            <p class="login-text">Already have an account? <a href="../sign-in/sign-in.component.html">Sign-in</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

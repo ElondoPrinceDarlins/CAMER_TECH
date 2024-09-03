@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.sidebar {
+    width: 250px;
+    background: #3a4a2b;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar .brand {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li.active a {
+    background: #2d3a24;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+header.welcome-message {
+    background: #3a4a2b;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.header-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "chart1 chart2 top-technicians"
+        "guides guides top-technicians";
+}
+
+.chart {
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 300px;
+}
+
+#popular-issues {
+    grid-area: chart1;
+}
+
+#technicians-availability {
+    grid-area: chart2;
+}
+
+.guides {
+    grid-area: guides;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.guides ul {
+    list-style: none;
+    padding: 0;
+}
+
+.guides ul li {
+    margin: 10px 0;
+}
+
+.guide {
+    display: flex;
+    align-items: center;
+}
+
+.guide-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.guide-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.guide-info a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.guide-info a:hover {
+    text-decoration: underline;
+}
+
+.top-technicians {
+    grid-area: top-technicians;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.top-technicians ul {
+    list-style: none;
+    padding: 0;
+}
+
+.top-technicians ul li {
+    margin: 10px 0;
+}
+
+.technician {
+    display: flex;
+    align-items: center;
+}
+
+.technician-photo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.technician-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.technician-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
