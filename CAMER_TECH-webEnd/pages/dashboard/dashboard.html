@@ -1,165 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="../../css/dashboard/dashboard_style.css">
-    <script src="../../js/dashboard/dashboard.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../../css/dashboard/dashboard_style.css">
+  <script src="../../js/dashboard/dashboard.js" defer></script>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="brand">CAMER TECH</div>
-        <nav>
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Technicians</a></li>
-                <li><a href="#">Statistics</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Sign-out</a></li>
-            </ul>
-        </nav>
+<div class="sidebar">
+  <div class="brand">CAMER TECH</div>
+  <nav>
+    <ul>
+      <li class="active"><a href="#" id="home-link">Home</a></li>
+      <li><a href="#" id="technicians-link">Technicians</a></li>
+      <li><a href="#" id="statistics-link">Statistics</a></li>
+      <li><a href="#" id="help-link">Help</a></li>
+      <li><a href="#" id="settings-link">Settings</a></li>
+      <li><a href="#" id="signout-link">Sign-out</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="main-content">
+  <header class="welcome-message">
+    <div class="welcome-text">
+      <h1>Welcome back, Darlins Prince</h1>
+      <p>You have 10 new technicians to check out. Proceed to the technicians tab and view their profiles.</p>
     </div>
-    <div class="main-content">
-        <header class="welcome-message">
-            <div class="welcome-text">
-                <h1>Welcome back, Darlins Prince</h1>
-                <p>You have 10 new technicians to check out. Proceed to the technicians tab and view their profiles.</p>
-            </div>
-            <div class="header-image">
-                <img src="../../img/images (1).jpeg" alt="Header Image">
-            </div>
-        </header>
-        <div class="grid-container">
-            <section class="chart" id="popular-issues">
-                <canvas id="popularIssuesChart"></canvas>
-            </section>
-            <section class="chart" id="technicians-availability">
-                <canvas id="techniciansAvailabilityChart"></canvas>
-            </section>
-            <section class="guides">
-                <h2>Get Popular I.T Documents and Books to Guide You</h2>
-                <ul>
-                    <li>
-                        <div class="guide">
-                            <div class="guide-icon">
-                                <img src="../../img/antivirus.jpeg" alt="Icon 1">
-                            </div>
-                            <div class="guide-info">
-                                <a href="#">How to handle malware and viruses by yourself</a>
-                                <span><a href="#">Get guide</a></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="guide">
-                            <div class="guide-icon">
-                                <img src="../../img/images (3).jpeg" alt="Icon 2">
-                            </div>
-                            <div class="guide-info">
-                                <a href="#">How to make your machine faster by yourself</a>
-                                <span><a href="#">Get guide</a></span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section class="top-technicians">
-                <h2>Top List Technicians</h2>
-                <ul>
-                    <li>
-                        <div class="technician">
-                            <div class="technician-photo">
-                                <img src="../../img/images.jpeg" alt="Mr Mike">
-                            </div>
-                            <div class="technician-info">
-                                <h3>Mr MIKE</h3>
-                                <p>7 years of experience in mawr handling.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="technician">
-                            <div class="technician-photo">
-                                <img src="./../../img/images (2).jpeg" alt="Mr Henry">
-                            </div>
-                            <div class="technician-info">
-                                <h3>Mr HENRY</h3>
-                                <p>10 years of experience in device booting problems.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="technician">
-                            <div class="technician-photo">
-                                <img src="../../img/IMG-20240709-WA0147[1].jpg" alt="Mr James">
-                            </div>
-                            <div class="technician-info">
-                                <h3>Mr JAMES</h3>
-                                <p>5 years of experience in system configuration.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="technician">
-                            <div class="technician-photo">
-                                <img src="../../img/derick.jpeg" alt="Mr Paul">
-                            </div>
-                            <div class="technician-info">
-                                <h3>Mr Joshian</h3>
-                                <p>5 years of experience in system crashing.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="technician">
-                            <div class="technician-photo">
-                                <img src="../../img/tuna.jpeg" alt="Mr Peter">
-                            </div>
-                            <div class="technician-info">
-                                <h3>Mr newton</h3>
-                                <p>5 years of experience in hardware problems.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="technician">
-                            <div class="technician-photo">
-                                <img src="../../img/prince.jpeg" alt="Mr prince">
-                            </div>
-                            <div class="technician-info">
-                                <h3>prince</h3>
-                                <p>7 years of experience in mobile problems.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="technician">
-                            <div class="technician-photo">
-                                <img src="../../img/nestor.jpeg" alt="Mr prince">
-                            </div>
-                            <div class="technician-info">
-                                <h3>Nestor</h3>
-                                <p>7 years of experience in analysis and project synchronization.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="technician">
-                            <div class="technician-photo">
-                                <img src="../../img/princess.jpeg" alt="Mr prince">
-                            </div>
-                            <div class="technician-info">
-                                <h3>princess F</h3>
-                                <p>3 years of experience in administration and configuration.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </div>
+    <div class="header-image">
+      <img src="../../img/images (1).jpeg" alt="Header Image">
     </div>
-    <script src="script.js"></script>
+  </header>
+  <div class="grid-container">
+    <section class="chart" id="popular-issues">
+      <canvas id="popularIssuesChart"></canvas>
+    </section>
+    <section class="chart" id="technicians-availability">
+      <canvas id="techniciansAvailabilityChart"></canvas>
+    </section>
+    <section class="guides">
+      <h2>Get Popular I.T Documents and Books to Guide You</h2>
+      <ul>
+        <li>
+          <div class="guide">
+            <div class="guide-icon">
+              <img src="../../img/antivirus.jpeg" alt="Icon 1">
+            </div>
+            <div class="guide-info">
+              <a href="#">How to handle malware and viruses by yourself</a>
+              <span><a href="#">Get guide</a></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="guide">
+            <div class="guide-icon">
+              <img src="../../img/images (3).jpeg" alt="Icon 2">
+            </div>
+            <div class="guide-info">
+              <a href="#">How to make your machine faster by yourself</a>
+              <span><a href="#">Get guide</a></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="top-technicians">
+      <h2>Top List Technicians</h2>
+      <ul>
+        <li>
+          <div class="technician">
+            <div class="technician-photo">
+              <img src="../../img/images.jpeg" alt="Mr Mike">
+            </div>
+            <div class="technician-info">
+              <h3>Mr MIKE</h3>
+              <p>7 years of experience in mawr handling.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="technician">
+            <div class="technician-photo">
+              <img src="./../../img/images (2).jpeg" alt="Mr Henry">
+            </div>
+            <div class="technician-info">
+              <h3>Mr HENRY</h3>
+              <p>10 years of experience in device booting problems.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="technician">
+            <div class="technician-photo">
+              <img src="../../img/IMG-20240709-WA0147[1].jpg" alt="Mr James">
+            </div>
+            <div class="technician-info">
+              <h3>Mr JAMES</h3>
+              <p>5 years of experience in system configuration.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="technician">
+            <div class="technician-photo">
+              <img src="../../img/derick.jpeg" alt="Mr Paul">
+            </div>
+            <div class="technician-info">
+              <h3>Mr Joshian</h3>
+              <p>5 years of experience in system crashing.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="technician">
+            <div class="technician-photo">
+              <img src="../../img/tuna.jpeg" alt="Mr Peter">
+            </div>
+            <div class="technician-info">
+              <h3>Mr newton</h3>
+              <p>5 years of experience in hardware problems.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="technician">
+            <div class="technician-photo">
+              <img src="../../img/prince.jpeg" alt="Mr prince">
+            </div>
+            <div class="technician-info">
+              <h3>prince</h3>
+              <p>7 years of experience in mobile problems.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="technician">
+            <div class="technician-photo">
+              <img src="../../img/nestor.jpeg" alt="Mr prince">
+            </div>
+            <div class="technician-info">
+              <h3>Nestor</h3>
+              <p>7 years of experience in analysis and project synchronization.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="technician">
+            <div class="technician-photo">
+              <img src="../../img/princess.jpeg" alt="Mr prince">
+            </div>
+            <div class="technician-info">
+              <h3>princess F</h3>
+              <p>3 years of experience in administration and configuration.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
+</div>
 </body>
 </html>
