@@ -1,4 +1,254 @@
+<style>
+  #derick{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  .header {
+    background-color: white;
+    height: 90vh;
+    color: white;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+
+  .dericklogo {
+    display: flex;
+    align-items: center;
+  }
+
+  .dericklogo h1 {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .dericklogo img {
+
+    margin-top: 15px;
+    height: 70px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-links a {
+  text-decoration:none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+    text-decoration:none;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .btn-secondary {
+  text-decoration:none;
+    background-color: #E1CACA;
+    color: black;
+  }
+
+  .btn-primary {
+    text-decoration:none;
+    background-color: #231B50;
+    color: white;
+  }
+
+  .btn-hero {
+  background-color:red;
+  color:white;
+  text-decoration:none;
+  width:120px;
+  height:40px;
+  border-radius:30px
+  }
+  .btn-hero a {
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  }
+
+
+  .hero {
+              background-color:#231B50;
+
+              background-size: cover;
+              background-repeat: no-repeat;
+              color: #fff;
+              padding: 4rem 2rem;
+              margin: 2rem;
+              text-align: center;
+              height: 60vh;
+              border-radius: 20px;
+
+          }
+          .hero h1 {
+              margin-top: 50px;
+              font-size: 4rem;
+              margin-bottom: 1rem;
+              font-weight: bold;
+          }
+          .hero p {
+              color: rgb(215, 207, 207);
+              font-size: 1.2rem;
+              margin-bottom: 2rem;
+          }
+          .search-bar {
+              height: 45px;
+              display: flex;
+              justify-content: center;
+              max-width: 600px;
+              margin: 0 auto;
+          }
+          .search-bar input {
+              flex-grow: 1;
+              padding: 0.8rem;
+              border: none;
+              border-radius: 20px 0 0 20px;
+              font-size: 20px;
+          }
+          .search-bar button {
+              background-color: #ff0000;
+              color: #fff;
+              border: none;
+              padding: 0.8rem 1.5rem;
+              border-radius: 0 20px 20px 0;
+              cursor: pointer;
+              transition: background-color 0.3s;
+          }
+          .search-bar button:hover {
+              background-color: #2c3e50;
+          }
+  /* Dropdown Styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .nav-links, .nav-buttons {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+
+    .nav-links-active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .nav-buttons-active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 180px;
+      left: 0;
+      right: 0;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .derickHeader-content {
+      flex-direction: column;
+    }
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 10px);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -10px);
+  }
+
+</style>
 <header>
   <section id="derick">
     <section class="header">
@@ -10,7 +260,7 @@
         <div class="nav-links">
           <a id="herolinks" href="#">Home</a>
           <div class="dropdown">
-            <a href="#" class="dropbtn" id="hero links">Explore▼</a>
+            <a href="#" class="dropbtn" id="hero links">Explore ▼</a>
             <div class="dropdown-content">
               <a href=".././pages/./chatbot/index.html" id="herolinks">Chat AI</a>
               <a routerLink='/dashboard'>Dashboard</a>
