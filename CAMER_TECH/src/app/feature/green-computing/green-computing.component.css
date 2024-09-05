@@ -1,182 +1,24 @@
 
     :root {
-        --primary-color: #4CAF50;
-        --secondary-color: #45a049;
-        --accent-color: #8BC34A;
-        --background-color: #E8F5E9;
-        --text-color: #333;
-        --card-color: #ffffff;
+      --primary-color: #4CAF50;
+      --secondary-color: #45a049;
+      --accent-color: #8BC34A;
+      --background-color: #E8F5E9;
+      --text-color: #333;
+      --card-color: #ffffff;
     }
 
     body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: var(--background-color);
-        color: var(--text-color);
-        line-height: 1.6;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    header {
-        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-        color: white;
-        padding: 30px 0;
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    h1, h2, h3 {
-        font-family: 'Montserrat', sans-serif;
-        margin: 0;
-    }
-
-    h1 {
-        font-size: 2.5em;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-
-    .hero {
-        background: url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-        height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-        position: relative;
+      background-color: var(--background-color);
+      color: var(--text-color);
     }
 
     .hero::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    .hero-content {
-        position: relative;
-        z-index: 1;
-    }
-
-    .hero h2 {
-        font-size: 3em;
-        margin-bottom: 20px;
-    }
-
-    .hero p {
-        font-size: 1.2em;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .section {
-        padding: 60px 0;
-        background-color: var(--card-color);
-        margin-bottom: 40px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    .section h3 {
-        font-size: 2em;
-        color: var(--primary-color);
-        margin-bottom: 20px;
-    }
-
-    .green-practices {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .practice {
-        flex-basis: calc(50% - 20px);
-        margin-bottom: 40px;
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .practice i {
-        font-size: 2em;
-        color: var(--accent-color);
-        margin-right: 20px;
-    }
-
-    .stats {
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        background-color: var(--primary-color);
-        color: white;
-        padding: 40px 0;
-        border-radius: 10px;
-    }
-
-    .stat h4 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-    }
-
-    .cta {
-        text-align: center;
-        padding: 60px 0;
-    }
-
-    .cta h3 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-    }
-
-    .btn {
-        display: inline-block;
-        padding: 15px 30px;
-        background-color: var(--accent-color);
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s;
-    }
-
-    .btn:hover {
-        background-color: var(--secondary-color);
-    }
-
-    .green-tips {
-        background-color: #E8F5E9;
-        padding: 20px;
-        border-radius: 10px;
-        margin-top: 40px;
-    }
-
-    .green-tips h4 {
-        color: var(--primary-color);
-        margin-bottom: 15px;
-    }
-
-    .green-tips ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
-
-    .green-tips li {
-        margin-bottom: 10px;
-        padding-left: 25px;
-        position: relative;
-    }
-
-    .green-tips li::before {
-        content: '✔';
-        color: var(--accent-color);
-        position: absolute;
-        left: 0;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
     }
