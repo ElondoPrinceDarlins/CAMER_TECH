@@ -4,62 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ Section</title>
-  <style>
-    #joshian {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-    .faq-container {
-      max-width: 560px; /* Reduced from 800px by 30% */
-      margin: 0 auto;
-    }
-    .faq-item {
-      background-color: #fff;
-      margin-bottom: 7px; /* Reduced from 10px by 30% */
-      border-radius: 4px; /* Reduced from 5px by 30% */
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-      font-size: 1.4em; /* Reduced from default size */
-    }
-    .faq-question {
-      padding: 14px; /* Reduced from 20px by 30% */
-      cursor: pointer;
-      position: relative;
-      font-weight: bold;
-      font-size: 0.9em; /* Reduced font size */
-      transition: background-color 0.3s ease;
-    }
-    .faq-question:hover {
-      background-color: #f9f9f9;
-    }
-    .faq-question::after {
-      content: '\25BC';
-      position: absolute;
-      right: 14px; /* Reduced from 20px by 30% */
-      transition: transform 0.3s ease;
-      font-size: 0.8em; /* Reduced size of the arrow */
-    }
-    .faq-answer {
-      padding: 0 14px; /* Reduced from 20px by 30% */
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease, padding 0.3s ease;
-      font-size: 0.8em; /* Reduced font size */
-    }
-    .faq-item.active .faq-question::after {
-      transform: rotate(180deg);
-    }
-    .faq-item.active .faq-answer {
-      max-height: 700px; /* Reduced from 1000px by 30% */
-      padding: 14px; /* Reduced from 20px by 30% */
-    }
-  </style>
+  <link rel="stylesheet" href="../././css/joshian_style.css">
 </head>
 <body>
 <section id="joshian">
@@ -102,18 +47,6 @@
     </div>
   </div>
 </section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      question.addEventListener('click', () => {
-        item.classList.toggle('active');
-      });
-    });
-  });
-</script>
+<script src=".././js/joshian.js"></script>
 </body>
 </html>

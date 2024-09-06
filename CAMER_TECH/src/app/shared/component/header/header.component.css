@@ -1,0 +1,21 @@
+
+    .dropdown-content {
+      display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .hamburger.active .nav-links, .hamburger.active .nav-buttons {
+      display: block;
+    }
+
+    .nav-links-active, .nav-buttons-active {
+      display: block !important;
+    }
+
+    .nav-links, .nav-buttons {
+      display: none;
+    }
+
