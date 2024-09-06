@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="./contact.component.css">
+<section id="contact_Us" class="bg-gray-100 min-h-screen">
+  <header class="bg-[#231B50] text-white py-4 shadow-md">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center px-8">
+      <div class="logo text-xl font-bold">CAMER TECH</div>
+      <div class="nav-links flex space-x-4">
+        <a href="" class="text-white hover:text-[#3498db] transition-colors">Home</a>
+        <a routerLink="/technician"
+           class="text-white hover:text-[#3498db] transition-colors">Technicians</a>
+        <a routerLink="/about" class="text-white hover:text-[#3498db] transition-colors">About</a>
+        <a routerLink="contact" class="text-white hover:text-[#3498db] transition-colors">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero bg-[#2c1f78] text-white text-center py-16">
+    <h1 class="text-4xl mb-4">Get in Touch with CAMER TECH team</h1>
+    <p class="text-lg">We're here to help you with all your technology needs</p>
+  </div>
+
+  <div class="container max-w-6xl mx-auto px-8 py-8">
+    <div class="contact-grid grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="contact-form bg-white rounded-lg shadow-lg p-8">
+        <h2
+          class="text-2xl text-[#2c3e50] mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-[#3498db]">
+          Send Us a Message</h2>
+        <form>
+          <div class="form-group mb-4">
+            <label for="name" class="block mb-2 text-[#34495e]">Name</label>
+            <input type="text" id="name" name="name" required
+                   class="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-[#3498db] focus:outline-none">
+          </div>
+          <div class="form-group mb-4">
+            <label for="email" class="block mb-2 text-[#34495e]">Email</label>
+            <input type="email" id="email" name="email" required
+                   class="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-[#3498db] focus:outline-none">
+          </div>
+          <div class="form-group mb-4">
+            <label for="subject" class="block mb-2 text-[#34495e]">Subject</label>
+            <select id="subject" name="subject" required
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-[#3498db] focus:outline-none">
+              <option value="">Select a subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="support">Technical Support</option>
+            </select>
+          </div>
+          <div class="form-group mb-4">
+            <label for="message" class="block mb-2 text-[#34495e]">Message</label>
+            <textarea id="message" name="message" required
+                      class="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-[#3498db] focus:outline-none h-40"></textarea>
+          </div>
+          <button type="submit"
+                  class="bg-[#3498db] text-white px-6 py-2 rounded-md hover:bg-[#2980b9] transition-colors">Send Message
+          </button>
+        </form>
+      </div>
+      <div class="contact-info bg-white rounded-lg shadow-lg p-8">
+        <h2
+          class="text-2xl text-[#2c3e50] mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-[#3498db]">
+          Contact Information</h2>
+        <div class="contact-method flex items-center mb-4">
+          <i class="fas fa-map-marker-alt text-[#3498db] text-xl mr-4"></i>
+          <p>Cameroon, yaounde</p>
+        </div>
+        <div class="contact-method flex items-center mb-4">
+          <i class="fas fa-phone text-[#3498db] text-xl mr-4"></i>
+          <p>+1 (237) 672 321 345</p>
+        </div>
+        <div class="contact-method flex items-center mb-4">
+          <i class="fas fa-envelope text-[#3498db] text-xl mr-4"></i>
+          <p>supportcamertech.com</p>
+        </div>
+        <div class="contact-method flex items-center mb-4">
+          <i class="fas fa-clock text-[#3498db] text-xl mr-4"></i>
+          <p>Monday - Friday: 9am - 6pm (PST)</p>
+        </div>
+        <h2
+          class="text-2xl text-[#2c3e50] mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-[#3498db]">
+          Follow Us</h2>
+        <div class="social-links flex space-x-4 mt-4">
+          <a href="#" aria-label="Facebook"><i
+            class="fab fa-facebook text-[#3498db] text-xl hover:text-[#2980b9] transition-colors"></i></a>
+          <a href="#" aria-label="Twitter"><i
+            class="fab fa-twitter text-[#3498db] text-xl hover:text-[#2980b9] transition-colors"></i></a>
+          <a href="#" aria-label="LinkedIn"><i
+            class="fab fa-linkedin text-[#3498db] text-xl hover:text-[#2980b9] transition-colors"></i></a>
+          <a href="#" aria-label="Instagram"><i
+            class="fab fa-instagram text-[#3498db] text-xl hover:text-[#2980b9] transition-colors"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="map mt-8">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127388.97228932429!2d11.428051694960669!3d3.8304725367253827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf7a309a7977%3A0x7f54bad35e693c51!2zWWFvdW5kw6k!5e0!3m2!1sfr!2scm!4v1724883956461!5m2!1sfr!2scm"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" class="w-full h-96 rounded-lg"></iframe>
+    </div>
+
+    <div class="faq mt-8 bg-white rounded-lg shadow-lg p-8">
+      <h2
+        class="text-2xl text-[#2c3e50] mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-[#3498db]">
+        Frequently Asked Questions</h2>
+      <div class="faq-item mb-4">
+        <div class="faq-question text-[#2c3e50] font-bold cursor-pointer">What types of IT services do you offer?</div>
+        <div class="faq-answer mt-2 hidden">We offer a wide range of IT services including network setup and
+          maintenance, cybersecurity, cloud computing solutions, and general IT support.
+        </div>
+      </div>
+      <div class="faq-item mb-4">
+        <div class="faq-question text-[#2c3e50] font-bold cursor-pointer">How quickly can I expect a response to my
+          inquiry?
+        </div>
+        <div class="faq-answer mt-2 hidden">We aim to respond to all inquiries within 24 hours during business days. For
+          urgent matters, please call our support line.
+        </div>
+      </div>
+      <div class="faq-item mb-4">
+        <div class="faq-question text-[#2c3e50] font-bold cursor-pointer">Do you offer services for both small
+          businesses and large corporations?
+        </div>
+        <div class="faq-answer mt-2 hidden">Yes, we cater to businesses of all sizes. Our services are scalable and can
+          be customized to meet the specific needs of your organization.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

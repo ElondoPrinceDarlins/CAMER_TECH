@@ -162,7 +162,7 @@ a {
 
 .overlay-left {
     transform: translateX(-10%);
-    background-image: url(.././../././img/ii-removebg-preview.png);
+    background-image: url(./login-logo.jpg);
     background-size: cover;
       background-repeat: no-repeat;
 }

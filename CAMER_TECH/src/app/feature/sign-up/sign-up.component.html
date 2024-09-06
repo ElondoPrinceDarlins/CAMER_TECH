@@ -1,13 +1,101 @@
-<app-header/>
-<section class="h-screen bg-fuchsia-200">
-  <div class="hero min-h-screen bg-base-200">
-    <div class="hero-content text-center">
-      <div class="max-w-md">
-        <h1 class="text-5xl font-bold">Hello there this is the sign Up section</h1>
-        <p class="py-6">CAMER TECH</p>
-        <h1>This is the work of derrick and Elondo to complete this section</h1>
-      </div>
+<section class="h-full bg-fuchsia-200 flex items-center justify-center py-6">
+  <div class="w-full max-w-6xl bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row">
+
+    <!-- Image Section -->
+    <div class="flex flex-col items-center justify-center w-full md:w-1/2 p-6">
+      <h2 class="text-2xl font-bold mb-4 text-center md:text-left">CAMER_TECH</h2>
+      <img src="ii-removebg-preview.png" alt="Illustration" class="w-full max-w-md h-auto"/>
     </div>
+
+    <!-- Form Section -->
+    <div class="w-full md:w-1/2 p-6">
+      <h1 class="text-2xl font-bold mb-4 text-center md:text-left">Get Started!</h1>
+      <p class="text-gray-600 mb-8 text-center md:text-left">Complete the sign-up to access your dashboard.</p>
+
+      <form class="space-y-6">
+
+        <!-- Name Field -->
+        <div class="form-group">
+          <label for="name" class="block text-sm font-medium mb-1">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required
+                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+
+        <!-- Gender Field -->
+        <div class="form-group">
+          <label class="block text-sm font-medium mb-1">Gender</label>
+          <div class="flex flex-col md:flex-row gap-4">
+            <div class="flex items-center">
+              <input type="radio" id="male" name="gender" value="male" required class="mr-2"/>
+              <label for="male" class="text-sm">Male</label>
+            </div>
+            <div class="flex items-center">
+              <input type="radio" id="female" name="gender" value="female" class="mr-2"/>
+              <label for="female" class="text-sm">Female</label>
+            </div>
+            <div class="flex items-center">
+              <input type="radio" id="others" name="gender" value="others" class="mr-2"/>
+              <label for="others" class="text-sm">Others</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+          <label for="email" class="block text-sm font-medium mb-1">E-mail</label>
+          <input type="email" id="email" placeholder="Enter your email" required
+                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+
+        <!-- Phone Number Field -->
+        <div class="form-group">
+          <label for="phone" class="block text-sm font-medium mb-1">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required
+                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="password" class="block text-sm font-medium mb-1">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required
+                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+
+        <!-- Repeat Password Field -->
+        <div class="form-group">
+          <label for="repeat-password" class="block text-sm font-medium mb-1">Repeat Password</label>
+          <input type="password" id="repeat-password" placeholder="Repeat your password" required
+                 class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+
+        <!-- Option Selection -->
+        <div class="form-group">
+          <label class="block text-sm font-medium mb-1">Select an Option</label>
+          <div class="flex flex-col md:flex-row gap-4">
+            <div class="flex items-center">
+              <input type="radio" id="tech" name="option" value="tech" required class="mr-2"/>
+              <label for="tech" class="text-sm">I want a technician</label>
+            </div>
+            <div class="flex items-center">
+              <input type="radio" id="tech2" name="option" value="tech2" class="mr-2"/>
+              <label for="tech2" class="text-sm">I am a technician</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"
+                class="w-full py-3 bg-red-600 text-white rounded-lg font-bold text-sm uppercase tracking-wide hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500">
+          Sign Up
+        </button>
+
+      </form>
+
+      <p class="text-sm mt-4 text-center md:text-left">Already have an account?
+        <a href="/signIn" class="text-red-600 hover:underline">Sign In</a>
+      </p>
+
+    </div>
+
   </div>
 </section>
-<app-footer/>

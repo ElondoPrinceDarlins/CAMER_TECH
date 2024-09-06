@@ -1,0 +1,90 @@
+<!-- Custom Color Variables in Tailwind -->
+<link rel="stylesheet" href="technician.component.css">
+
+
+<header class="bg-[#231B50] text-white py-8 text-center shadow-md">
+  <h1 class="text-4xl font-semibold">CAMER TECH</h1>
+</header>
+
+<div class="container mx-auto px-5 py-10 bg-[var(--background-color)] text-[var(--text-color)]">
+  <!-- Search Bar -->
+  <div class="search-bar flex justify-center mb-8">
+    <input type="text" placeholder="Find your perfect technician..."
+           class="w-2/3 px-4 py-3 text-lg border-none rounded-l-full shadow-md">
+    <button
+      class="px-6 py-3 bg-[var(--accent-color)] text-white border-none rounded-r-full cursor-pointer transition-colors hover:bg-[#e67e22]">
+      <i class="fas fa-search"></i> Search
+    </button>
+  </div>
+
+  <!-- Categories Section -->
+  <div class="categories-section mb-10">
+    <h2 class="text-3xl text-[var(--primary-color)] mb-5">Categories</h2>
+    <div class="categories flex justify-center flex-wrap gap-4">
+      <div
+        class="category bg-white px-5 py-2 rounded-full shadow-md cursor-pointer transition-all hover:bg-[var(--primary-color)] hover:text-white hover:-translate-y-1">
+        System Crashing
+      </div>
+      <div
+        class="category bg-white px-5 py-2 rounded-full shadow-md cursor-pointer transition-all hover:bg-[var(--primary-color)] hover:text-white hover:-translate-y-1">
+        Device Booting
+      </div>
+      <div
+        class="category bg-white px-5 py-2 rounded-full shadow-md cursor-pointer transition-all hover:bg-[var(--primary-color)] hover:text-white hover:-translate-y-1">
+        Memory Upgrade
+      </div>
+      <div
+        class="category bg-white px-5 py-2 rounded-full shadow-md cursor-pointer transition-all hover:bg-[var(--primary-color)] hover:text-white hover:-translate-y-1">
+        System Installation
+      </div>
+      <div
+        class="category bg-white px-5 py-2 rounded-full shadow-md cursor-pointer transition-all hover:bg-[var(--primary-color)] hover:text-white hover:-translate-y-1">
+        Hardware
+      </div>
+      <div
+        class="category bg-white px-5 py-2 rounded-full shadow-md cursor-pointer transition-all hover:bg-[var(--primary-color)] hover:text-white hover:-translate-y-1">
+        Slow Performance
+      </div>
+      <div
+        class="category bg-white px-5 py-2 rounded-full shadow-md cursor-pointer transition-all hover:bg-[var(--primary-color)] hover:text-white hover:-translate-y-1">
+        Appliance Repair
+      </div>
+    </div>
+  </div>
+
+  <!-- Available Technicians Section -->
+  <h2 class="text-3xl text-[var(--primary-color)] mb-5">Available Technicians</h2>
+  <div class="technicians-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <!-- Technician Card -->
+    <a href="#" class="technician-card block bg-[var(--card-color)] rounded-lg overflow-hidden shadow-lg transition-all hover:-translate-y-2.5 hover:shadow-2xl">
+      <img src="/derick.jpeg" alt="John Doe" class="technician-image w-full h-56 object-cover">
+      <div class="technician-info p-5">
+        <h3 class="technician-name text-xl font-semibold text-[var(--primary-color)] mb-2">John Doe
+          <span class="badge bg-[var(--accent-color)] text-white px-2 py-1 rounded-full text-xs font-semibold">Top Rated</span>
+        </h3>
+        <div class="technician-category text-[var(--secondary-color)] text-sm font-medium">Technician</div>
+        <div class="technician-rating flex items-center mt-3">
+          <span class="star text-[var(--accent-color)] mr-1">★★★★★</span>
+          <span>4.9 (120 reviews)</span>
+        </div>
+        <div class="technician-price text-xl font-semibold text-[var(--primary-color)] mt-3">Starting at $50/hr</div>
+      </div>
+    </a>
+
+    <!-- More Technician Cards -->
+    <a href="#" class="technician-card block bg-[var(--card-color)] rounded-lg overflow-hidden shadow-lg transition-all hover:-translate-y-2.5 hover:shadow-2xl">
+      <img src="/prince.jpeg" alt="Sarah Smith" class="technician-image w-full h-56 object-cover">
+      <div class="technician-info p-5">
+        <h3 class="technician-name text-xl font-semibold text-[var(--primary-color)] mb-2">Sarah Smith</h3>
+        <div class="technician-category text-[var(--secondary-color)] text-sm font-medium">Technician</div>
+        <div class="technician-rating flex items-center mt-3">
+          <span class="star text-[var(--accent-color)] mr-1">★★★★☆</span>
+          <span>4.2 (85 reviews)</span>
+        </div>
+        <div class="technician-price text-xl font-semibold text-[var(--primary-color)] mt-3">Starting at $45/hr</div>
+      </div>
+    </a>
+
+    <!-- Add other technician cards similarly, maintaining the same structure -->
+  </div>
+</div>

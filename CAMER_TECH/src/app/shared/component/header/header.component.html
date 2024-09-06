@@ -1,13 +1,73 @@
-<header class="w-full bg-fuchsia-600 text-black shadow flex justify-center items-center">
-  This is the header in the header component.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camer Tech</title>
+  <link rel="stylesheet" href="header.component.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-roboto m-0 p-0">
 
-  <div class="bg-fuchsia-950 m-3 cursor-pointer hover:border-b-fuchsia-600 underline underline-offset-2"
-       routerLink="/sign-in">sign-in
-    Click me
-  </div>
-  <div class="bg-fuchsia-950 m-3 cursor-pointer hover:border-b-fuchsia-600 underline underline-offset-2"
-       routerLink="/sign-up">sign-up
-    Click me
-  </div>
-  <div routerLink="/dashboard" class="bg-green-300 w-fit m-3 p-4 border rounded"> Go to the dashboard</div>
+<header>
+  <section id="derick">
+    <section class="header bg-white h-[90vh]">
+      <nav class="flex justify-between items-center p-5 lg:px-12">
+        <div class="dericklogo flex items-center">
+          <img src="camer_tech_logo-removebg-preview.png" alt="Camer Tech Logo" class="mt-4 h-16">
+          <h1 class="text-black font-bold text-2xl ml-4">CAMER TECH</h1>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links hidden md:flex gap-10">
+          <a href="#" id="herolinks" class="text-black font-bold no-underline">Home</a>
+          <div class="dropdown relative">
+            <button class="dropbtn text-black font-bold">Explore ▼</button>
+            <div class="dropdown-content absolute hidden bg-white shadow-lg mt-2">
+              <a href=".././pages/./chatbot/index.html" id="herolinks" class="block px-4 py-2 hover:bg-gray-100">Chat AI</a>
+              <a href="/dashboard" class="block px-4 py-2 hover:bg-gray-100">Dashboard</a>
+              <a href="/contact" id="herolinks" class="block px-4 py-2 hover:bg-gray-100">Contact us</a>
+              <a href="/greenComputing" id="herolinks" class="block px-4 py-2 hover:bg-gray-100">Green Computing</a>
+              <a href="/about" id="herolinks" class="block px-4 py-2 hover:bg-gray-100">About</a>
+            </div>
+          </div>
+          <a href="/technician" id="herolinks" class="text-black font-bold no-underline cursor-pointer">Find technician</a>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons hidden md:flex gap-4">
+          <a href="/signIn" class="btn btn-secondary px-5 py-2 rounded-full bg-[#E1CACA] text-black font-bold">Sign In</a>
+          <a href="/signUp" class="btn btn-primary px-5 py-2 rounded-full bg-[#231B50] text-white font-bold">Sign Up</a>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger flex flex-col cursor-pointer md:hidden">
+          <span class="bar w-6 h-[3px] bg-black my-[3px] transition-all"></span>
+          <span class="bar w-6 h-[3px] bg-black my-[3px] transition-all"></span>
+          <span class="bar w-6 h-[3px] bg-black my-[3px] transition-all"></span>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero bg-[#231B50] text-white p-8 text-center h-[60vh] mx-8 rounded-2xldericklogo header bg-[url('/desugn2.jpg')] bg-cover bg-center">
+        <div class="container mx-auto">
+          <h1 class="text-4xl font-bold mt-12">Your Tech Issues, Solved</h1>
+          <p class="text-lg text-gray-300 my-4">Connect with expert IT technicians to resolve your technology challenges quickly and efficiently.</p>
+
+          <!-- Search Bar -->
+          <div class="search-bar flex justify-center items-center max-w-xl mx-auto mt-6">
+            <input type="text" placeholder="What tech service do you need?" class="flex-grow p-3 text-lg rounded-l-full border-none">
+            <button class="bg-red-600 text-white px-6 py-3 rounded-r-full hover:bg-gray-800">Search</button>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
 </header>
+
+<script>
+  // For dropdown and hamburger menu
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('hidden');
+    document.querySelector('.nav-buttons').classList.toggle('hidden');
+    this.classList.toggle('active');
+  });
+</script>

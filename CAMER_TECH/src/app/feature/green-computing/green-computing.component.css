@@ -1,0 +1,24 @@
+
+    :root {
+      --primary-color: #4CAF50;
+      --secondary-color: #45a049;
+      --accent-color: #8BC34A;
+      --background-color: #E8F5E9;
+      --text-color: #333;
+      --card-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }

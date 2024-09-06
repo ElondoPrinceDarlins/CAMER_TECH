@@ -12,7 +12,8 @@
   "description": "",
   "dependencies": {
     "concurrently": "^8.2.2",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "typescript": "^5.5.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
