@@ -1,62 +1,9 @@
+<app-header></app-header>
 <body class="bg-white">
-<header class="bg-white shadow-md p-4">
-  <div class="container mx-auto flex justify-between items-center">
 
-    <!-- Logo -->
-    <div class="text-xl font-bold">
-      <a href="#">Logo</a>
-    </div>
-
-    <!-- Navigation Links (Hidden on mobile) -->
-    <nav class="hidden md:flex space-x-8">
-      <routerLink="/" class="hover:text-blue-500">Home</a>
-      <a href="#" class="hover:text-blue-500">About</a>
-      <a href="#" class="hover:text-blue-500">Services</a>
-
-
-    <!-- Buttons (Hidden on mobile) -->
-    <div class="hidden md:flex space-x-4">
-      <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Login</button>
-      <button class="border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white">Sign Up</button>
-    </div>
-
-    <!-- Hamburger Menu for Mobile -->
-    <div class="md:hidden">
-      <button id="menu-toggle" class="text-3xl focus:outline-none">&#9776;</button>
-    </div>
-
-  <!-- Mobile Menu (Hidden by default) -->
-  <div id="mobile-menu" class="hidden md:hidden mt-4">
-    <nav class="flex flex-col space-y-4">
-      <a href="#" class="hover:text-blue-500">Home</a>
-      <a href="#" class="hover:text-blue-500">About</a>
-      <a href="#" class="hover:text-blue-500">Services</a>
-    </nav>
-    <div class="mt-4 flex flex-col space-y-4">
-      <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Login</button>
-      <button class="border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white">Sign Up</button>
-    </div>
-  </div>
-</header>
-
-<!-- Container Section with Background Image -->
-<section class="relative mt-8 mx-4 p-8 bg-cover bg-center rounded-lg" style="background-image: url('https://via.placeholder.com/1200x600'); height: 60vh;">
-  <div class="text-center text-white">
-    <h1 class="text-4xl font-bold">Welcome to Our Website</h1>
-    <p class="mt-4 text-lg">Find the best services here. Let us help you succeed.</p>
-
-    <!-- Search Bar -->
-    <div class="mt-8">
-      <form class="flex justify-center">
-        <input type="text" placeholder="Search..." class="px-4 py-2 rounded-l-lg w-full max-w-md">
-        <button class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600">Search</button>
-      </form>
-    </div>
-  </div>
-</section>
 
 <!-- Categories Section -->
-<section class="bg-white-900 text-white py-12">
+<section class="bg-white-900 mt-20  text-white py-12">
   <div class="container mx-auto text-center">
     <h2 class="text-3xl font-bold mb-8">Most in-demand categories</h2>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -88,7 +35,7 @@
 </section>
 
 <!-- Get Started Section -->
-<section class="bg-white py-12">
+<section class="bg-white mt-20  py-12">
   <div class="container mx-auto text-center">
     <h2 class="text-3xl font-bold mb-8">Get started</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -100,7 +47,7 @@
 </section>
 
 <!-- IT Specialist Section -->
-<section class="bg-white-900 text-white py-12">
+<section class="bg-white-900  mt-20 text-white py-12">
   <div class="container mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div class="flex justify-center">
@@ -155,7 +102,7 @@
 </section>
 
 <!-- FAQ Section -->
-<section class="bg-white py-12">
+<section class="bg-white mt-20  py-12">
   <div class="container mx-auto text-center">
     <h2 class="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -169,7 +116,7 @@
 </section>
 
 <!-- Carousel Section -->
-<section class="bg-gray-100 py-12">
+<section class="bg-gray-100 mt-20 py-12">
   <div class="container mx-auto text-center">
     <h2 class="text-3xl font-bold mb-8">Explore Based on Your Location</h2>
     <div class="relative">
@@ -185,22 +132,22 @@
       <div id="carousel" class="flex overflow-hidden">
         <!-- Item 1 -->
         <div class="bg-white p-6 rounded-lg shadow-md flex-none w-1/4">
-          <img src="yaounde.jpg" alt="Region 1" class="h-32 w-full object-cover mb-4 rounded-lg">
+          <img src="yaounde.jpg" alt="Region 1" class="h-1/2 w-full object-cover mb-4 rounded-lg">
           <p>Center</p>
         </div>
         <!-- Item 2 -->
         <div class="bg-white p-6 rounded-lg shadow-md flex-none w-1/4">
-          <img src="douala.jpg" alt="Region 2" class="h-32 w-full object-cover mb-4 rounded-lg">
+          <img src="douala.jpg" alt="Region 2" class="h-1/2 w-full object-cover mb-4 rounded-lg">
           <p>Littoral</p>
         </div>
         <!-- Item 3 -->
         <div class="bg-white p-6 rounded-lg shadow-md flex-none w-1/4">
-          <img src="download (1).jpeg" alt="Region 3" class="h-32 w-full object-cover mb-4 rounded-lg">
+          <img src="download (1).jpeg" alt="Region 3" class="h-1/2 w-full object-cover mb-4 rounded-lg">
           <p>West</p>
         </div>
         <!-- Item 4 -->
         <div class="bg-white p-6 rounded-lg shadow-md flex-none w-1/4">
-          <img src="buea.jpg" alt="Region 4" class="h-32 w-full object-cover mb-4 rounded-lg">
+          <img src="buea.jpg" alt="Region 4" class="h-1/2 w-full object-cover mb-4 rounded-lg">
           <p>Southwest</p>
         </div>
       </div>
@@ -211,8 +158,8 @@
 </body>
 
 <!-- Get Quality IT Section -->
-<section class="bg-indigo-900 text-white py-12">
-  <div class="container mx-auto text-center">
+<section class="flex h-[50vh] mt-20  mb-8 justify-between items-center bg-[#2c2a58] rounded-[20px] p-10 max-w-[900px] w-[90%] shadow-lg text-white mx-auto">
+  <div class="container mx-auto  text-center">
     <div class="flex justify-center items-center">
       <div class="w-1/2">
         <img src="fjt.png" alt="Specialist" class="rounded-lg">
@@ -252,3 +199,4 @@
       }
   });
 </script>
+<app-footer></app-footer>
