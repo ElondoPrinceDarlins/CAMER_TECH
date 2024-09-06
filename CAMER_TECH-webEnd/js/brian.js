@@ -1,4 +1,4 @@
-const carouselImages = document.getElementById('carouselImages');
+  const carouselImages = document.getElementById('carouselImages');
 const leftArrow = document.getElementById('leftArrow');
 const rightArrow = document.getElementById('rightArrow');
 
