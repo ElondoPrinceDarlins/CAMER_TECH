@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign-Up for Clients</title>
+  <title>Sign-Up for Technicians</title>
   <link rel="stylesheet" href=".././.././css/./authentication/signup.css">
 </head>
 <body>
@@ -19,8 +19,8 @@
 
     <!-- Right Side (Form Section) -->
     <div class="signup-section">
-      <h1>Let's get started!</h1>
-      <p>Complete sign up to access this feature</p>
+      <h1>Join us as a Technician!</h1>
+      <p>Complete sign up to start offering your services</p>
 
       <form>
         <div class="form-group">
@@ -39,6 +39,11 @@
         </div>
 
         <div class="form-group">
+          <label for="id_card_number">ID Card Number</label>
+          <input type="text" id="id_card_number" placeholder="Enter your ID card number" required>
+        </div>
+
+        <div class="form-group">
           <label for="phone">Phone Number</label>
           <input type="tel" id="phone" placeholder="Enter your phone number" required>
         </div>
@@ -49,19 +54,8 @@
       </form>
 
       <p class="login-text">Already have an account? <a href=".././authentication/./login/login.html">Login</a></p>
-
       <div>
-        <a class="terms-and-conditions" href=".././privacy/privacy.html">
-          <p>Click here to see terms and conditions</p>
-        </a>
-      </div>
-
-      <!-- Section for Technicians -->
-      <div class="technician-signup">
-        <p>Are you a technician?</p>
-        <a href=".././authentication/./signupt.html">
-          <button class="signup-btn">Sign-up as Technician</button>
-        </a>
+        <a class="terms-and-conditions" href=".././privacy/privacy.html"><p>Click here to see terms and conditions</p></a>
       </div>
 
     </div>
