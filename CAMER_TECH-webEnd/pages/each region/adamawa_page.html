@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechConnect - Adamawa Region Technicians</title>
+  <style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --accent-color: #e74c3c;
+        --background-color: #ecf0f1;
+        --text-color: #34495e;
+    }
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: var(--secondary-color);
+    }
+    h1, h2, h3 {
+        margin-bottom: 0.5rem;
+    }
+    .hero {
+        background-image: url('/api/placeholder/1200/400');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+    .hero::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+        background-color: #27ae60;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .technician-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .technician-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .technician-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .technician-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .technician-info {
+        padding: 20px;
+    }
+    .technician-info h3 {
+        margin-top: 0;
+        color: var(--primary-color);
+    }
+    .technician-info p {
+        margin: 5px 0;
+    }
+    .rating {
+        color: #f39c12;
+        font-weight: bold;
+    }
+    .features {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .feature {
+        flex-basis: calc(33.333% - 20px);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .feature i {
+        font-size: 3rem;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+    }
+    footer {
+        background-color: var(--text-color);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#technicians">Technicians</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>CENTER Region</h1>
+      <p>Your One-Stop Technician Marketplace in the Adamawa Region</p>
+      <a href="#technicians" class="cta-button">Find a Technician</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Our Adamawa Region Services</h2>
+      <p>CAMER TECH brings you the best technicians in the Center Region. Our platform connects you with skilled professionals who can handle all your technical needs, from computer repairs to smart home installations.</p>
+      <div class="features">
+        <div class="feature">
+          <i>🛠️</i>
+          <h3>Expert Technicians</h3>
+          <p>Our technicians are vetted and highly skilled in their specialties.</p>
+        </div>
+        <div class="feature">
+          <i>🕒</i>
+          <h3>Quick Response</h3>
+          <p>Get help fast with our efficient booking and dispatch system.</p>
+        </div>
+        <div class="feature">
+          <i>💯</i>
+          <h3>Quality Guarantee</h3>
+          <p>We stand behind the quality of work provided by our technicians.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="technicians" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Adamawa Region Technicians</h2>
+      <div class="technician-grid">
+        <div class="technician-card">
+          <img src="/api/placeholder/400/300" alt="John Doe">
+          <div class="technician-info">
+            <h3>John Doe</h3>
+            <p><strong>Specialty:</strong> Computer Repair</p>
+            <p><strong>Experience:</strong> 8 years</p>
+            <p class="rating">★★★★★ 4.8/5</p>
+            <a href="#" class="cta-button">Book Now</a>
+          </div>
+        </div>
+        <div class="technician-card">
+          <img src="/api/placeholder/400/300" alt="Jane Smith">
+          <div class="technician-info">
+            <h3>Jane Smith</h3>
+            <p><strong>Specialty:</strong> Networking</p>
+            <p><strong>Experience:</strong> 12 years</p>
+            <p class="rating">★★★★★ 4.9/5</p>
+            <a href="#" class="cta-button">Book Now</a>
+          </div>
+        </div>
+        <div class="technician-card">
+          <img src="/api/placeholder/400/300" alt="Mike Johnson">
+          <div class="technician-info">
+            <h3>Mike Johnson</h3>
+            <p><strong>Specialty:</strong> Mobile Repair</p>
+            <p><strong>Experience:</strong> 5 years</p>
+            <p class="rating">★★★★☆ 4.7/5</p>
+            <a href="#" class="cta-button">Book Now</a>
+          </div>
+        </div>
+        <div class="technician-card">
+          <img src="/api/placeholder/400/300" alt="Sarah Lee">
+          <div class="technician-info">
+            <h3>Sarah Lee</h3>
+            <p><strong>Specialty:</strong> Smart Home Installation</p>
+            <p><strong>Experience:</strong> 7 years</p>
+            <p class="rating">★★★★★ 4.9/5</p>
+            <a href="#" class="cta-button">Book Now</a>
+          </div>
+        </div>
+        <div class="technician-card">
+          <img src="/api/placeholder/400/300" alt="David Brown">
+          <div class="technician-info">
+            <h3>David Brown</h3>
+            <p><strong>Specialty:</strong> Security Systems</p>
+            <p><strong>Experience:</strong> 10 years</p>
+            <p class="rating">★★★★★ 5.0/5</p>
+            <a href="#" class="cta-button">Book Now</a>
+          </div>
+        </div>
+        <div class="technician-card">
+          <img src="/api/placeholder/400/300" alt="Emily Chen">
+          <div class="technician-info">
+            <h3>Emily Chen</h3>
+            <p><strong>Specialty:</strong> Data Recovery</p>
+            <p><strong>Experience:</strong> 6 years</p>
+            <p class="rating">★★★★☆ 4.8/5</p>
+            <a href="#" class="cta-button">Book Now</a>
+          </div>
+        </div>
+        <div class="technician-card">
+          <img src="/api/placeholder/400/300" alt="Alex Turner">
+          <div class="technician-info">
+            <h3>Alex Turner</h3>
+            <p><strong>Specialty:</strong> Audio/Visual Systems</p>
+            <p><strong>Experience:</strong> 9 years</p>
+            <p class="rating">★★★★★ 4.9/5</p>
+            <a href="#" class="cta-button">Book Now</a>
+          </div>
+        </div>
+        <div class="technician-card">
+          <img src="/api/placeholder/400/300" alt="Olivia Garcia">
+          <div class="technician-info">
+            <h3>Olivia Garcia</h3>
+            <p><strong>Specialty:</strong> Printer Repair</p>
+            <p><strong>Experience:</strong> 4 years</p>
+            <p class="rating">★★★★☆ 4.7/5</p>
+            <a href="#" class="cta-button">Book Now</a>
+          </div>
+        </div>
+        <div class="technician-card">
+          <img src="/api/placeholder/400/300" alt="Robert Kim">
+          <div class="technician-info">
+            <h3>Robert Kim</h3>
+            <p><strong>Specialty:</strong> Gaming Systems</p>
+            <p><strong>Experience:</strong> 8 years</p>
+            <p class="rating">★★★★★ 4.9/5</p>
+            <a href="#" class="cta-button">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p>Need help finding the right technician? Have questions about our services? Get in touch with us!</p>
+      <p>Email: info@techconnect.com</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Address: 123 Tech Street, Center City, Center Region</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 TechConnect. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
+
