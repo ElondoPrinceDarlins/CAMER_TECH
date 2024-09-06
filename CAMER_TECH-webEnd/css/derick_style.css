@@ -46,7 +46,7 @@ nav {
   gap: 40px;
 }
 
-.nav-links a {
+.herolinks {
 text-decoration:none;
   color: black;
   font-family: sans-serif;
@@ -120,7 +120,7 @@ font-weight:bold;
             border-radius: 20px;
 
         }
-        .hero h1 {
+        .hero h2 {
             margin-top: 50px;
             font-size: 4rem;
             margin-bottom: 1rem;
@@ -159,6 +159,7 @@ font-weight:bold;
         }
 /* Dropdown Styles */
 .dropdown {
+ color:black;
   position: relative;
   display: inline-block;
 }
@@ -173,6 +174,7 @@ font-weight:bold;
 
 .dropdown-content {
   display: none;
+  color:black;
   position: absolute;
   background-color: white;
   min-width: 160px;

@@ -13,6 +13,7 @@
   "dependencies": {
     "concurrently": "^8.2.2",
     "express": "^4.19.2",
+    "nodemailer": "^6.9.15",
     "typescript": "^5.5.4"
   },
   "devDependencies": {
