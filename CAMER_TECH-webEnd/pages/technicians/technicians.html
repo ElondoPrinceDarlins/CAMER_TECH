@@ -1,379 +1,317 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>camer tech</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <style>
-        :root {
-            --primary-color: #3498db;
-            --secondary-color: #e74c3c;
-            --accent-color: #f39c12;
-            --background-color: #ecf0f1;
-            --card-color: #ffffff;
-            --text-color: #2c3e50;
-        }
+< <style>
+  :root {
+      --primary-color: #3498db;
+      --secondary-color: #e74c3c;
+      --accent-color: #f39c12;
+      --background-color: #ecf0f1;
+      --card-color: #ffffff;
+      --text-color: #2c3e50;
+  }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background-color);
-            color: var(--text-color);
-        }
+  body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+  }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  }
 
-        header {
-           background-color: #231B50;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
+  header {
+     background-color: #231B50;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
 
-        h1, h2 {
-            margin: 0;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
+  h1, h2 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
 
-        h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-        }
+  h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+  }
 
-        .search-bar {
-            display: flex;
-            justify-content: center;
-            margin: 30px 0;
-        }
+  .search-bar {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+  }
 
-        .search-bar input {
-            width: 60%;
-            padding: 15px;
-            font-size: 16px;
-            border: none;
-            border-radius: 30px 0 0 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+  .search-bar input {
+      width: 60%;
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px 0 0 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
 
-        .search-bar button {
-            padding: 15px 30px;
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            border-radius: 0 30px 30px 0;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+  .search-bar button {
+      padding: 15px 30px;
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      border-radius: 0 30px 30px 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
 
-        .search-bar button:hover {
-            background-color: #e67e22;
-        }
+  .search-bar button:hover {
+      background-color: #e67e22;
+  }
 
-        .categories-section {
-            margin-bottom: 40px;
-        }
+  .categories-section {
+      margin-bottom: 40px;
+  }
 
-        .categories {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
+  .categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+  }
 
-        .category {
-            background-color: var(--card-color);
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+  .category {
+      background-color: var(--card-color);
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
 
-        .category:hover {
-            background-color: var(--primary-color);
-            color: white;
-            transform: translateY(-3px);
-        }
+  .category:hover {
+      background-color: var(--primary-color);
+      color: white;
+      transform: translateY(-3px);
+  }
 
-        .technicians-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
-        }
+  .technicians-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+  }
 
-        .technician-card {
-            background-color: var(--card-color);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: all 0.3s;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
+  .technician-card {
+      background-color: var(--card-color);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+  }
 
-        .technician-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-        }
+  .technician-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  }
 
-        .technician-image {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
+  .technician-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+  }
 
-        .technician-info {
-            padding: 20px;
-        }
+  .technician-info {
+      padding: 20px;
+  }
 
-        .technician-name {
-            font-weight: 600;
-            margin: 0 0 10px 0;
-            color: var(--primary-color);
-        }
+  .technician-name {
+      font-weight: 600;
+      margin: 0 0 10px 0;
+      color: var(--primary-color);
+  }
 
-        .technician-category {
-            color: var(--secondary-color);
-            font-size: 14px;
-            font-weight: 500;
-        }
-       .technician-LOCATION{
-         color: black;
-            font-size: 14px;
-            font-weight: 500;
-       }
-        .technician-rating {
-            display: flex;
-            align-items: center;
-            margin-top: 15px;
-        }
+  .technician-category {
+      color: var(--secondary-color);
+      font-size: 14px;
+      font-weight: 500;
+  }
+ .technician-LOCATION{
+   color: black;
+      font-size: 14px;
+      font-weight: 500;
+ }
+  .technician-rating {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+  }
 
-        .star {
-            color: var(--accent-color);
-            margin-right: 5px;
-        }
+  .star {
+      color: var(--accent-color);
+      margin-right: 5px;
+  }
 
-        .technician-price {
-            font-weight: 600;
-            margin-top: 15px;
-            color: var(--primary-color);
-        }
+  .technician-price {
+      font-weight: 600;
+      margin-top: 15px;
+      color: var(--primary-color);
+  }
 
-        .badge {
-            background-color: var(--accent-color);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 12px;
-            font-weight: 500;
-            margin-left: 10px;
-        }
-    </style>
+  .badge {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-left: 10px;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>CAMER TECH </h1>
-    </header>
-    <div class="container">
-        <div class="search-bar">
-            <input type="text" placeholder="Find your perfect technician...">
-            <button><i class="fas fa-search"></i> Search</button>
-        </div>
+<header>
+  <h1>CAMER TECH </h1>
+</header>
+<span class="star">★★★★★</span>
+<span>5.0 (7 reviews)</span><div class="container">
+  <div class="search-bar">
+    <input type="text" placeholder="Find your perfect technician...">
+    <button><i class="fas fa-search"></i> Search</button>
+  </div>
 
-        <div class="categories-section">
-            <h2>Categories</h2>
-            <div class="categories">
-                <div class="category">system crashing</div>
-                <div class="category">device booting</div>
-                <div class="category">Memory upgrade</div>
-                <div class="category">System installation</div>
-                <div class="category">hardware</div>
-                <div class="category">Slow performance</div>
-                <div class="category">Appliance Repair</div>
-            </div>
-        </div>
-
-        <h2>Available Technicians</h2>
-        <div class="technicians-grid">
-            <a href=".././each%20technician/technician5.html" class="technician-card">
-                <img src="/CAMER_TECH-webEnd/img/prince%20(2).jfif" alt="John Doe" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">DARLINS PRINCE <span class="badge">Top Rated</span></h3>
-                    <div class="technician-category">specialty:Hardware maintenance</div>
-                  <div class="technician-LOCATION">Location:YAOUNDE</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★★</span>
-                        <span>4.9 (120 reviews)</span>
-                    </div>
-                    <div class="technician-price">Starting at 5000FCFA</div>
-                </div>
-            </a>
-
-            <a href=".././each%20technician/technician4.html" class="technician-card">
-                <img src="../././.././img/derick%20(2).jfif" alt="Sarah Smith" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">AKUMSI DERICK</h3>
-                    <div class="technician-category">specialty:system crashing</div>
-                  <div class="technician-LOCATION">Location:YAOUNDE</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★☆</span>
-                        <span>4.2 (85 reviews)</span>
-                    </div>
-                    <div class="technician-price">starting at 7000FCFA</div>
-                </div>
-            </a>
-
-            <!-- Add 8 more technician cards here, similar to the above structure -->
-            <a class="technician-card" href=".././.././pages/each%20technician/technician1.html">
-                <img src="../././.././img/newton%20(2).jfif" alt="John Doe" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">CHO NEWTON <span class="badge">Top Rated</span></h3>
-                    <div class="technician-category">specialty:software maintenance</div>
-                  <div class="technician-LOCATION">Location:YAOUNDE</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★★</span>
-                        <span>4.9 (120 reviews)</span>
-                    </div>
-                    <div class="technician-price">starting at 5000FCFA</div>
-                </div>
-            </a>
-
-
-          <a class="technician-card" href=".././.././pages/each%20technician/technician3.html">
-                <img src="../././.././img/princesse%20(3).jfif" alt="Mike Johnson" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">PRECIOUSE PRINCESSE<span class="badge">New</span></h3>
-                    <div class="technician-category">specialty:Slow performance</div>
-                  <div class="technician-LOCATION">Location:Yaounde</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★★</span>
-                        <span>5.0 (7 reviews)</span>
-                    </div>
-                    <div class="technician-price">starting at 5000FCFA</div>
-                </div>
-            </a>
-
-          <a class="technician-card" href=".././.././pages/each%20technician/technician6.html">
-            <img src="../././.././img/nestor%20(2).jfif" alt="Mike Johnson" class="technician-image">
-            <div class="technician-info">
-              <h3 class="technician-name">NESTOR NGWA<span class="badge">New</span></h3>
-              <div class="technician-category">specialty:Hardware maintenace</div>
-              <div class="technician-LOCATION">Location:Yaounde</div>
-              <div class="technician-rating">
-                <span class="star">★★★★★</span>
-                <span>5.0 (7 reviews)</span>
-              </div>
-              <div class="technician-price">starting at 5000FCFA</div>
-            </div>
-          </a>
-          <a class="technician-card" href=".././.././pages/each%20technician/technician2.html">
-                <img src="../././.././img/emil.jfif" alt="Emily Brown" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">Emile Brown</h3>
-                    <div class="technician-category">specialty:Memory upgrade</div>
-                  <div class="technician-LOCATION">Location:YAOUNDE</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★☆</span>
-                        <span>4.6 (92 reviews)</span>
-                    </div>
-                    <div class="technician-price">Starting at 7500FCFA</div>
-                </div>
-          </a>
-            <div class="technician-card">
-                <img src="../././.././img/77.avif" alt="David Lee" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">David Lee <span class="badge">Featured</span></h3>
-                    <div class="technician-category">specialty:Slow performance</div>
-                  <div class="technician-LOCATION">Location:DOUALA</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★★</span>
-                        <span>4.8 (156 reviews)</span>
-                    </div>
-                    <div class="technician-price">Starting at 6500FCFA</div>
-                </div>
-            </div>
-
-            <div class="technician-card">
-                <img src="../././.././img/88.avif" alt="Lisa Wang" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">  JAMES SMITH</h3>
-                    <div class="technician-category">specialty:Appliance repair</div>
-                  <div class="technician-LOCATION">Location:YAOUNDE</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★☆</span>
-                        <span>4.3 (78 reviews)</span>
-                    </div>
-                    <div class="technician-price">Starting at 10,000FCFA</div>
-                </div>
-            </div>
-
-            <div class="technician-card">
-                <img src="../././.././img/99.avif" alt="Robert Taylor" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">Robert Taylor</h3>
-                    <div class="technician-category">specialty:device booting</div>
-                  <div class="technician-LOCATION">Location:YAOUNDE</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★★</span>
-                        <span>4.7 (110 reviews)</span>
-                    </div>
-                    <div class="technician-price">Starting at 5000FCFA</div>
-                </div>
-            </div>
-
-            <div class="technician-card">
-                <img src="../././.././img/10.avif" alt="Amanda Garcia" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">ROMARIC ARMAND<span class="badge">Top Rated</span></h3>
-                    <div class="technician-category">specialty:Slow performance</div>
-                  <div class="technician-LOCATION">Location:BAFOUSSAM</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★★</span>
-                        <span>4.9 (203 reviews)</span>
-                    </div>
-                    <div class="technician-price">Starting at 7500FCFA</div>
-                </div>
-            </div>
-
-            <div class="technician-card">
-                <img src="../././.././img/12.avif" alt="Chris Murphy" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">Chris Murphy</h3>
-                    <div class="technician-category">specialty:device booting</div>
-                  <div class="technician-LOCATION">Location:YAOUNDE</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★☆</span>
-                        <span>4.5 (88 reviews)</span>
-                    </div>
-                    <div class="technician-price">Starting at 6000FCFA</div>
-                </div>
-            </div>
-
-            <div class="technician-card">
-                <img src="../././.././img/11.avif" alt="Jessica Kim" class="technician-image">
-                <div class="technician-info">
-                    <h3 class="technician-name">JEAN BERNARD<span class="badge">Rising Star</span></h3>
-                    <div class="technician-category">specialty:System installation</div>
-                  <div class="technician-LOCATION">Location:YAOUNDE</div>
-                    <div class="technician-rating">
-                        <span class="star">★★★★★</span>
-                        <span>4.8 (42 reviews)</span>
-                    </div>
-                    <div class="technician-price">Starting at 5000FCFA</div>
-                </div>
-        </div>
+  <div class="categories-section">
+    <h2>Categories</h2>
+    <div class="categories">
+      <div class="category">system crashing</div>
+      <div class="category">device booting</div>
+      <div class="category">Memory upgrade</div>
+      <div class="category">System installation</div>
+      <div class="category">hardware</div>
+      <div class="category">Slow performance</div>
+      <div class="category">Appliance Repair</div>
     </div>
+  </div>
+
+  <h2>Available Technicians</h2>
+  <div class="technicians-grid">
+    <a href=".././each%20technician/technician5.html" class="technician-card">
+      <img src=".././.././img/prince%20(2).jfif" alt="John Doe" class="technician-image">
+      <div class="technician-info">
+        <h3 class="technician-name">DARLINS PRINCE <span class="badge">Top Rated</span></h3>
+        <div class="technician-category">specialty:Hardware maintenance</div>
+        <div class="technician-LOCATION">Location:YAOUNDE</div>
+        <div class="technician-rating">
+          <span class="star">★★★★★<span>
+          <span>5.0 (7 reviews)</span>
+        </div>
+        <div class="technician-price">Starting at 5000FCFA</div>
+      </div>
+    </a>
+
+    <a href=".././each%20technician/technician4.html" class="technician-card">
+      <img src="../././.././img/derick%20(2).jfif" alt="Sarah Smith" class="technician-image">
+      <div class="technician-info">
+        <h3 class="technician-name">AKUMSI DERICK</h3>
+        <div class="technician-category">specialty:system crashing</div>
+        <div class="technician-LOCATION">Location:YAOUNDE</div>
+        <div class="technician-rating">
+          <span class="star">★★★★★</span>
+          <span>5.0 (7 reviews)</span>
+        </div>
+        <div class="technician-price">starting at 7000FCFA</div>
+      </div>
+    </a>
+
+    <!-- Add 8 more technician cards here, similar to the above structure -->
+    <a class="technician-card" href=".././.././pages/each%20technician/technician1.html">
+      <img src="../././.././img/newton%20(2).jfif" alt="John Doe" class="technician-image">
+      <div class="technician-info">
+        <h3 class="technician-name">CHO NEWTON <span class="badge">Top Rated</span></h3>
+        <div class="technician-category">specialty:software maintenance</div>
+        <div class="technician-LOCATION">Location:YAOUNDE</div>
+        <div class="technician-rating">
+
+        </div>
+        <div class="technician-price">starting at 5000FCFA</div>
+      </div>
+    </a>
+
+
+    <a class="technician-card" href=".././.././pages/each%20technician/technician3.html">
+      <img src="../././.././img/princesse%20(3).jfif" alt="Mike Johnson" class="technician-image">
+      <div class="technician-info">
+        <h3 class="technician-name">PRECIOUSE PRINCESSE<span class="badge">New</span></h3>
+        <div class="technician-category">specialty:Slow performance</div>
+        <div class="technician-LOCATION">Location:Yaounde</div>
+        <div class="technician-rating">
+          <span class="star">★★★★★</span>
+          <span>5.0 (7 reviews)</span>
+        </div>
+        <div class="technician-price">starting at 5000FCFA</div>
+      </div>
+    </a>
+
+    <a class="technician-card" href=".././.././pages/each%20technician/technician6.html">
+      <img src="../././.././img/nestor%20(2).jfif" alt="Mike Johnson" class="technician-image">
+      <div class="technician-info">
+        <h3 class="technician-name">NESTOR NGWA<
+          <div class="technician-category">specialty:Hardware maintenace</div>
+          <div class="technician-LOCATION">Location:Yaounde</div>
+          <div class="technician-rating">
+            <span class="star">★★★★★</span>
+            <span>5.0 (7 reviews)</span>
+          </div>
+          <div class="technician-price">starting at 5000FCFA</div>
+      </div>
+    </a>
+    <a class="technician-card" href=".././.././pages/each%20technician/technician2.html">
+      <img src="../././.././img/emil.jfif" alt="Emily Brown" class="technician-image">
+      <div class="technician-info">
+        <h3 class="technician-name">Emile Brown</h3>
+        <div class="technician-category">specialty:Memory upgrade</div>
+        <div class="technician-LOCATION">Location:YAOUNDE</div>
+        <div class="technician-rating">
+          <span class="star">★★★★★</span>
+          <span>5.0 (7 reviews)</span>
+        </div>
+        <div class="technician-price">Starting at 7500FCFA</div>
+      </div>
+    </a>
+    <div class="technician-card">
+      <img src="../././.././img/brian%20(2).jfif" alt="David Lee" class="technician-image">
+      <div class="technician-info">
+        <h3 class="technician-name">EYONG BRIAN<span class="badge">Featured</span></h3>
+        <div class="technician-category">specialty:Slow performance</div>
+        <div class="technician-LOCATION">Location:DOUALA</div>
+        <div class="technician-rating">
+          <span class="star">★★★★★</span>
+          <span>5.0 (7 reviews)</span>
+        </div>
+        <div class="technician-price">Starting at 6500FCFA</div>
+      </div>
+    </div>
+
+    <div class="technician-card">
+      <img src="../././.././img/joshian%20(2).jfif" alt="Lisa Wang" class="technician-image">
+      <div class="technician-info">
+        <h3 class="technician-name">  JOSHIAN RUSSEL</h3>
+        <div class="technician-category">specialty:Appliance repair</div>
+        <div class="technician-LOCATION">Location:YAOUNDE</div>
+        <div class="technician-rating">
+          <span class="star">★★★★★</span>
+          <span>5.0 (7 reviews)</span>
+        </div>
+        <div class="technician-price">Starting at 10,000FCFA</div>
+      </div>
+    </div>
+
+
+
 </body>
 </html>
