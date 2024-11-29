@@ -1,0 +1,41 @@
+<div class="flex font-sans min-h-screen">
+  <div class="fixed top-0 left-0 h-full w-64 bg-[#3a4a2b] text-white p-6">
+    <div class="flex flex-col h-full">
+      <div class="text-2xl font-semibold mb-8">CAMER TECH</div>
+      <nav>
+        <ul>
+          <li class="mb-4">
+            <a routerLink="/dashboard" class="block py-2 px-4 rounded transition hover:bg-[#2d3a24]">Home</a>
+          </li>
+          <li class="mb-4">
+            <a routerLink="/dashboard/technicians" routerLinkActive="text-red-500 bg-gray-100  bg-opacity-10"
+               [routerLinkActiveOptions]="{ exact: true }"
+               class="block py-2 px-4 rounded transition hover:bg-[#2d3a24]">Technicians</a>
+          </li>
+          <li class="mb-4">
+            <a routerLink="/dashboard/statistics" routerLinkActive="text-red-500 bg-red-200 bg-opacity-10"
+               [routerLinkActiveOptions]="{ exact: true }"
+               class="block py-2 px-4 rounded transition hover:bg-[#2d3a24]">Statistics</a>
+          </li>
+          <li class="mb-4">
+            <a routerLink="/dashboard/help" routerLinkActive="text-red-500 bg-red-200 bg-opacity-10"
+               [routerLinkActiveOptions]="{ exact: true }"
+               class="block py-2 px-4 rounded transition hover:bg-[#2d3a24]">Help</a>
+          </li>
+          <li>
+            <a routerLink="/dashboard/settings" routerLinkActive="text-red-500 bg-red-200 bg-opacity-10"
+               [routerLinkActiveOptions]="{ exact: true }"
+               class="block py-2 px-4 rounded transition hover:bg-[#2d3a24]">Settings</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mt-auto">
+        <a routerLink="" class="block py-2 px-4 rounded transition hover:bg-[#2d3a24]">Sign-out</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-1 ml-64  p-6">
+    <router-outlet></router-outlet>
+  </div>
+</div>

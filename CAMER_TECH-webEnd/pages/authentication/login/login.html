@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href=".././../../../CAMER_TECH-webEnd/././././css/./authentication/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="Login.css">
 </head>
 <body>
-
-<div class="login-wrapper">
-  <div class="login-container">
-    <!-- Left Side (Image) -->
-    <div class="image-section">
-      <img src="../././../../../CAMER_TECH-webEnd/./img/login-logo.jpg" alt="Illustration" />
-    </div>
-
-    <!-- Right Side (Form) -->
-    <div class="login-section">
-      <h1>LOGIN</h1>
-      <p>Fill in your information and access your dashboard</p>
-
-      <form>
-        <div class="form-group">
-          <label for="email">e-mail</label>
-          <input type="email" id="email" placeholder="Enter your email" required>
+    <div class="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button>Sign In</button>
+            </form>
         </div>
-        <div class="form-group password-group">
-          <label for="password">password</label>
-          <input type="password" id="password" placeholder="Enter your password" required>
-          <button type="button" class="toggle-password" onclick="togglePassword()">Show</button>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Login</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <a href="#">Forgot your password?</a>
+                <button>Login</button>
+            </form>
         </div>
-        <button type="submit" class="login-btn">Login</button>
-      </form>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Login</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
 
-      <p class="signup-text">Don't yet have an account? <a href="#">signup</a></p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
-<script>
-  function togglePassword() {
-    var passwordField = document.getElementById("password");
-    var toggleBtn = document.querySelector(".toggle-password");
-    if (passwordField.type === "password") {
-      passwordField.type = "text";
-      toggleBtn.textContent = "Hide";
-    } else {
-      passwordField.type = "password";
-      toggleBtn.textContent = "Show";
-    }
-  }
-</script>
-
+    <script src="Login.js"></script>
 </body>
 </html>

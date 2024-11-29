@@ -1,169 +1,131 @@
-#body_fangmbeng {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: white;
-    background: #333;
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-}
-
-/* Container Styles */
-#fangmbeng {
+/* General Styles */
+body {
+    margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
 }
 
-.container_fangmbeng {
-    width: 90%;
-    max-width: 1170px;
-    margin: 0 auto;
-    padding-bottom: 4rem;
-    font-size: 16px;
+footer {
+    background-color: #2a2652;
+    padding: 40px 20px;
+    color: #fff;
 }
 
-/* Footer Styles */
 .footer_fangmbeng {
     display: flex;
     flex-wrap: wrap;
-    padding: 70px 15px; /* Added horizontal padding for smaller screens */
-    background: whitesmoke;
-    color: black;
-    margin: auto;
-    border-top: 1px solid #ddd; /* Added a top border for a clean separation */
-}
-
-.footer-form {
-    flex: 1 1 100%;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
-}
-
-.footer-form p.head {
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: #333; /* Changed text color to a darker shade for better visibility */
-}
-
-#footer-email {
-    width: 100%;
-    max-width: 300px; /* Increased max-width for better visibility on larger screens */
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    background-color: #efd3d3;
-    color: #524e4e;
-    outline: none;
-    padding: 0 10px;
-    margin-bottom: 0.5rem;
-}
-
-#footer-email-btn {
-    height: 40px;
-    width: 50%;
-    max-width: 200px; /* Increased max-width for better visibility */
-    cursor: pointer;
-    background-color: green;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0px;
-    transition: background-color 0.3s, opacity 0.3s;
-}
-
-#footer-email-btn:hover {
-    background-color: #004d00; /* Darker green on hover */
-    opacity: 0.8;
-}
-
-/* Footer Sections */
-.footer_1,
-.footer_2 {
-    flex: 1 1 200px;
-    margin: 0 15px; /* Reduced margin to optimize space on smaller screens */
-
-}
-
-.footer_1 h4,
-.footer_2 h4 {
-    color: rgb(180, 178, 178);
-    font-weight: bold;
-    margin-left: 120px;
-}
-
-.footer_1 .list_1,
-.footer_2 .list_2 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 120px;
-}
-
-.footer_1 button,
-.footer_2 button {
-    background: whitesmoke;
-    border: none;
-    margin-left: 105px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 0.9em;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+    justify-content: space-between;
     text-align: left;
 }
 
-.footer_1 button a,
-.footer_2 button a {
-    color: black;
+/* Align all h3 tags horizontally */
+.header_fangmbeng {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px 20px;
+}
+.footer_1 {
+    display: flex;
+    flex: 1;
+    margin: 10px 20px;
+}
+
+.footer_h3_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer_h3_container h3 {
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Adjusted content under each h3 */
+.header_fangmbeng .content_fangmbeng a,
+.footer_1 .cat_fangmbeng a,
+.footer_1 .quick_fangmbeng a{
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* City list styles */
+.country {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.list_fangmbeng {
+    list-style: none;
+    padding: 0;
+}
+a:link{
+    color: white;
     text-decoration: none;
+}
+
+.list_fangmbeng li a {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Category and Quick Links Styles */
+.cat_fangmbeng button,
+.quick_fangmbeng button {
     display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #2a2652;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
 }
 
-.footer_1 button:hover,
-.footer_2 button:hover {
-    background-color: #e9ece3;
+.cat_fangmbeng button:hover,
+.quick_fangmbeng button:hover, 
+.list_fangmbeng li:hover  {
+    background-color: #4f4a7a;
 }
 
-.footer_1 button a:hover,
-.footer_2 button a:hover {
-    color: rgb(180, 178, 178);
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .footer {
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer_fangmbeng {
         flex-direction: column;
-        align-items: center;
     }
 
-    .footer_1,
-    .footer_2 {
-        margin: 0;
-        text-align: center;
+    .footer_h3_container {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    #footer-email,
-    #footer-email-btn {
-        max-width: 100%;
+    .footer_h3_container h3 {
+        margin-bottom: 10px;
+    }
+
+    .cat_fangmbeng button,
+    .quick_fangmbeng button {
+        font-size: 16px;
+        padding: 12px;
     }
 }
 
-@media (max-width: 480px) {
-    #footer-email,
-    #footer-email-btn {
-        font-size: 14px;
+@media screen and (max-width: 480px) {
+    .footer_h3_container h3 {
+        font-size: 16px;
     }
 
-    .footer_1 button,
-    .footer_2 button {
+    .cat_fangmbeng button,
+    .quick_fangmbeng button {
         font-size: 14px;
-        padding: 8px 12px;
     }
 }
