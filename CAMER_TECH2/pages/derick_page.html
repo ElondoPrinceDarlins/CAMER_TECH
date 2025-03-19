@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href=".././css/derick_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="">
+</head>
+<body>
+<section id="derick">
+  <section class="header">
+
+    <nav>
+      <div class="dericklogo">
+        <img src=".././img/camer_tech_logo-removebg-preview.png" alt="Camer Tech Logo">
+        <h1>CAMER TECH</h1>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <div class="dropdown">
+          <a href="#" class="dropbtn">Explore ▼</a>
+          <div class="dropdown-content">
+            <a href=".././pages/./chatbot/index.html">Chat AI</a>
+            <a href="../././pages/contact/contact_page.html">Contact us</a>
+            <a href="../././pages/./greencomputing/greencomputing.html">Green Computing</a>
+            <a href=".././pages/./about/aboutpage.html">About</a>
+            <a href=".././pages/authentication/signup.html">Dashboard</a>
+          </div>
+        </div>
+        <a href=".././pages/./technicians/technicians.html">Find technician</a>
+
+      </div>
+      <div class="nav-buttons">
+        <a href=".././pages/./authentication/./login/login.html" class="btn btn-secondary">Login</a>
+        <a href="../pages/technicians/technicians.html" class="btn btn-primary">Sign Up</a>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <section style="background-image: url('./../img/hht-removebg-preview\ \(1\).png');" class="hero">
+      <div class="container">
+        <h1>Your Tech Issues, Solved</h1>
+        <p>Connect with expert IT technicians to resolve your technology challenges quickly and efficiently.</p>
+        <div class="search-bar">
+          <input type="text" placeholder="What tech service do you need?">
+          <button>Search</button>
+        </div>
+      </div>
+    </section>
+  </section>
+</section>
+<script>
+  function toggleMenu() {
+  var navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("active");
+}
+</script>
+</body>
+</html>

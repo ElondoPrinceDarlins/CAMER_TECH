@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 20px;
+    line-height: 1.5;
+    text-decoration: none;
+    display: grid;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: rgb(61, 60, 60);
+    background-color: #c4dbcd;
+  }
+
+
+  h1{
+    text-align: center;
+  }
+  .container-client{
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .section{
+margin: 30px;
+  }
+  p{
+    margin-bottom: 10px;
+  }
+  button {
+    border-radius: 20px;
+    border: 1px transparent;
+    background-color:transparent;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    transition: transform 80ms ease-in;
+  }
+  ul{
+    list-style: none;
+  }
+  a:link{
+    text-decoration: none;
+  }
